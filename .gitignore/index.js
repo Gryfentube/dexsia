@@ -14,12 +14,12 @@ bot.on('ready', () => {
 bot.login(process.env.TOKEN);
 bot.on("guildMemberAdd", member => {
     bot.channels.get('454987596960104452').sendMessage('Passe un bon moment dans la **DexSia** ' + member.user + ' 😉')
-    var dC= member.guild.channels.find("name", "welcom  ");
+    var dC= member.guild.channels.find("name", "welcome");
 
     if (dC) {
-        dC.send('Passe un bon moment dans la **DexSia** ' + member.user + ' 😉');
+        dC.sendmessage('Passe un bon moment dans la **DexSia** ' + member.user + ' 😉');
     } else {
-        member.guild.defaultChannel.send('Passe un bon moment dans la **DexSia** ' + member.user + ' 😉');
+        member.guild.defaultChannel.sendMessage('Passe un bon moment dans la **DexSia** ' + member.user + ' 😉');
     }
 });
 bot.on("guildMemberRemove", member => {
