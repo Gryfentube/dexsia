@@ -19,7 +19,7 @@ bot.on("guildMemberAdd", member => {
 bot.on("guildMemberRemove", member => {
     var gB = member.guild.channels.find("name", "aurevoir");
     var pute = "Quelqu'un dont on taiera le nom";
-    gB.sendMessage('**' + member.user.displayName + '** est partie. Rest in pepperoni...')
+    gB.sendMessage('**' + member.displayName + '** est partie. Rest in pepperoni...')
 });
 bot.on('message', message => {
 
