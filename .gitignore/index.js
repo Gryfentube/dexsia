@@ -23,7 +23,7 @@ bot.on("guildMemberAdd", member => {
     }
 });
 bot.on("guildMemberRemove", member => {
-    bot.channels.get('4549876442928250902').sendMessage('**' + member.user.username + '** est partie. Rest in pepperoni...')
+    member.guild.channels.get('4549876442928250902').sendMessage('**' + pute + '** est partie. Rest in pepperoni...')
 });
 bot.on('message', message => {
 
