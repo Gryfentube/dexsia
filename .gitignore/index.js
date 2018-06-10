@@ -13,7 +13,7 @@ bot.on('ready', () => {
 
 bot.login(process.env.TOKEN);
 bot.on("guildMemberAdd", member => {
-    bot.channels.get('441664261454823446').sendMessage('Passe un bon moment dans la  **DexSia** ' + member.user + ' 😉')
+    bot.channels.get('454987596960104452').sendMessage('Passe un bon moment dans la **DexSia** ' + member.user + ' 😉')
 });
 bot.on('message', message => {
 
