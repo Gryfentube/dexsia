@@ -23,7 +23,7 @@ bot.on('message', message => {
     switch (args[0].toLowerCase()){
 
         case "empty":
- break:
+ break;
     }
 
 });
