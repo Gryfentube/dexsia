@@ -17,7 +17,7 @@ bot.on("guildMemberAdd", member => {
     var dC= member.guild.channels.find("name", "welcome");
 
     if (dC) {
-        dC.sendmessage('Passe un bon moment dans la **DexSia** ' + member.user + ' 😉');
+        dC.sendMessage('Passe un bon moment dans la **DexSia** ' + member.user + ' 😉');
     } else {
         member.guild.defaultChannel.sendMessage('Passe un bon moment dans la **DexSia** ' + member.user + ' 😉');
     }
