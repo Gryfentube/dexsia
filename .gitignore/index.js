@@ -14,12 +14,12 @@ bot.on('ready', () => {
 bot.login(process.env.TOKEN);
 bot.on("guildMemberAdd", member => {
     var dC = member.guild.channels.find("name", "welcome");
-    dC.sendMessage('Passe un bon moment dans la **DexSia** ' + member.user.displayName + ' 😉');
+    dC.sendMessage('Passe un bon moment dans la **DexSia** ' + member.user + ' 😉');
 });
 bot.on("guildMemberRemove", member => {
     var gB = member.guild.channels.find("name", "aurevoir");
     var pute = "Quelqu'un dont on taiera le nom";
-    gB.sendMessage('**' + member.user + '** est partie. Rest in pepperoni...')
+    gB.sendMessage('**' + member.user.displayName + '** est partie. Rest in pepperoni...')
 });
 bot.on('message', message => {
 
