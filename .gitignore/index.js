@@ -36,9 +36,36 @@ bot.on('message', message => {
 
     switch (args[0].toLowerCase()){
 
-        case input1:
-            bot.channels.get('455070342612910081').sendMessage(output1))
-            bot.channels.get('455070342612910081').sendMessage(console1)) //console
+        case "OUI":
+            message.channel.send({embed: {
+    color: 3447003,
+    author: {
+      name: client.user.username,
+      icon_url: client.user.avatarURL
+    },
+    title: "Titre numéro 1",
+    url: "https://www.google.fr/search?q=ON+CHERCHE+QUOI+LES+GARS+%3F&rlz=1C1CHBD_frFR725FR725&oq=ON+CHERCHE+QUOI+LES+GARS+%3F&aqs=chrome..69i57.6119j1j7&sourceid=chrome&ie=UTF-8",
+    description: "Ouais donc les gars on fait des test pour la suite",
+    fields: [{
+        name: "C'EST LA SUITE",
+        value: "EN FAIT UAI"
+      },
+      {
+        name: "UESH LES POTES",
+        value: "REGARDE CE QU'ON PEUT FAIRE [C'EST FOU](https://www.google.fr/search?q=ON+CHERCHE+QUOI+LES+GARS+%3F&rlz=1C1CHBD_frFR725FR725&oq=ON+CHERCHE+QUOI+LES+GARS+%3F&aqs=chrome..69i57.6119j1j7&sourceid=chrome&ie=UTF-8) FJKGDKFGJBD"
+      },
+      {
+        name: "Et en plus les trucs fonctionnes",
+        value: "vouala *alouwa* **__alfksds__** de danana to."
+      }
+    ],
+    timestamp: new Date(),
+    footer: {
+      icon_url: client.user.avatarURL,
+      text: "© Gryf 2049"
+    }
+  }
+});
  break;
     }
 
