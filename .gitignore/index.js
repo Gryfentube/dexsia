@@ -8,7 +8,7 @@ var values = ("empty");
 bot.on('ready', () => {
     bot.user.setPresence({ game: { name: activ}});
     console.log("Le bot est prêt");
-    
+    bot.channels.get('455070342612910081').send("Je suis en ligne ! :D");
 });
 
 bot.login(process.env.TOKEN);
