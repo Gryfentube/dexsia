@@ -3,7 +3,7 @@ const Discord = require('discord.js');
 
 var bot = new Discord.Client();
 var prefix = ("_");
-var activ = ("Moderer");
+var activ = ("être un idiot sans vertèbre");
 var values = ("empty");
 
 //salons DexSia Introduce YourSelf
