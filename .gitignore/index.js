@@ -30,18 +30,18 @@ bot.on("guildMemberRemove", member => { //Quand un membre quitte dans le serveur
     bot.channels.get('455070342612910081').sendMessage(member.user + " a quitté la DexSia, le message s'est bien affiché")  //console
 });
 bot.on('message', message => {
-
+    
     if (!message.content.startsWith(prefix)) return;
     var args = message.content.substring(prefix.length).split(" ");
-
+    var author = message.member.displayName;
     switch (args[0].toLowerCase()){
 
         case "oui":
             message.channel.send({embed: {
     color: 3447003,
     author: {
-      name: member.displayName,
-      icon_url: client.user.avatarURL
+      name: author,
+      icon_url: message.member.avatarURL
     },
     title: "Titre numéro 1",
     url: "https://www.google.fr/search?q=ON+CHERCHE+QUOI+LES+GARS+%3F&rlz=1C1CHBD_frFR725FR725&oq=ON+CHERCHE+QUOI+LES+GARS+%3F&aqs=chrome..69i57.6119j1j7&sourceid=chrome&ie=UTF-8",
