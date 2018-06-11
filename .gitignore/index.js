@@ -36,7 +36,7 @@ bot.on('message', message => {
 
     switch (args[0].toLowerCase()){
 
-        case "OUI":
+        case "oui":
             message.channel.send({embed: {
     color: 3447003,
     author: {
