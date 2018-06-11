@@ -40,7 +40,7 @@ bot.on('message', message => {
             message.channel.send({embed: {
     color: 3447003,
     author: {
-      name: client.user.username,
+      name: member.displayName,
       icon_url: client.user.avatarURL
     },
     title: "Titre numéro 1",
