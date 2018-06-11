@@ -37,35 +37,14 @@ bot.on('message', message => {
     switch (args[0].toLowerCase()){
 
         case "oui":
-            message.channel.send({embed: {
-    color: 3447003,
-    author: {
-      name: author,
-      icon_url: message.member.avatarURL
-    },
-    title: "Titre numéro 1",
-    url: "https://www.google.fr/search?q=ON+CHERCHE+QUOI+LES+GARS+%3F&rlz=1C1CHBD_frFR725FR725&oq=ON+CHERCHE+QUOI+LES+GARS+%3F&aqs=chrome..69i57.6119j1j7&sourceid=chrome&ie=UTF-8",
-    description: "Ouais donc les gars on fait des test pour la suite",
-    fields: [{
-        name: "C'EST LA SUITE",
-        value: "EN FAIT UAI"
-      },
-      {
-        name: "UESH LES POTES",
-        value: "REGARDE CE QU'ON PEUT FAIRE [C'EST FOU](https://www.google.fr/search?q=ON+CHERCHE+QUOI+LES+GARS+%3F&rlz=1C1CHBD_frFR725FR725&oq=ON+CHERCHE+QUOI+LES+GARS+%3F&aqs=chrome..69i57.6119j1j7&sourceid=chrome&ie=UTF-8) FJKGDKFGJBD"
-      },
-      {
-        name: "Et en plus les trucs fonctionnes",
-        value: "vouala *alouwa* **__alfksds__** de danana to."
-      }
-    ],
-    timestamp: new Date(),
-    footer: {
-      icon_url: message.member.avatarURL,
-      text: "© Gryf 2049"
-    }
-  }
-});
+            message.channel.send({embed: {color: 3447003, author: {name: author, icon_url: message.member.avatarURL},
+                                title: "Titre numéro 1", url: "https://www.google.fr/search?q=ON+CHERCHE+QUOI+LES+GARS+%3F&rlz=1C1CHBD_frFR725FR725&oq=ON+CHERCHE+QUOI+LES+GARS+%3F&aqs=chrome..69i57.6119j1j7&sourceid=chrome&ie=UTF-8",
+                                description: "Ouais donc les gars on fait des test pour la suite",
+                                fields: [{name: "C'EST LA SUITE", value: "EN FAIT UAI"},
+                                {name: "UESH LES POTES",
+                                 value: "REGARDE CE QU'ON PEUT FAIRE [C'EST FOU](https://www.google.fr/search?q=ON+CHERCHE+QUOI+LES+GARS+%3F&rlz=1C1CHBD_frFR725FR725&oq=ON+CHERCHE+QUOI+LES+GARS+%3F&aqs=chrome..69i57.6119j1j7&sourceid=chrome&ie=UTF-8) FJKGDKFGJBD"},
+                                {name: "Et en plus les trucs fonctionnes", value: "vouala *alouwa* **__alfksds__** de danana to."}],
+                                timestamp: new Date(), footer: {icon_url: message.member.avatarURL, text: "© Gryf 2049"}}});
  break;
     }
 
