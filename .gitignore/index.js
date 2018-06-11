@@ -61,7 +61,7 @@ bot.on('message', message => {
     ],
     timestamp: new Date(),
     footer: {
-      icon_url: client.user.avatarURL,
+      icon_url: message.member.avatarURL,
       text: "© Gryf 2049"
     }
   }
