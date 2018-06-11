@@ -53,7 +53,7 @@ bot.on('message', message => {
         if (message.channel.id === activitDXS) {
     var value = message.content;
     bot.user.setPresence({ game: { name: value}})
-        .then(bot.channels.get(consauleDXS).sendMessage({embed: {color: 0x202020, author: {name: "Je joue maintenant à " + value + "grâce à " + author,
+        .then(bot.channels.get(consauleDXS).sendMessage({embed: {color: 0x202020, author: {name: "Je joue maintenant à __" + value + "__ grâce à " + author,
       icon_url: "https://cdn.discordapp.com/icons/441664261454823444/1cced0ad87913d0d5232dce11bedb70f.png"}}}))};
     
     if (!message.content.startsWith(prefix)) return;
