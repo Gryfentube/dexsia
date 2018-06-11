@@ -33,7 +33,7 @@ bot.login(process.env.TOKEN); //définition du token
 bot.on('ready', () => {
     bot.user.setPresence({ game: { name: activ}});
     console.log("Le bot est prêt");
-    bot.channels.get(consauleDXS).send({embed: {color: 3447003, author: {name: "Je suis en ligne :D",
+    bot.channels.get(consauleDXS).send({embed: {color: 0x3ac400, author: {name: "Je suis en ligne :D",
       icon_url: "https://cdn.discordapp.com/icons/441664261454823444/1cced0ad87913d0d5232dce11bedb70f.png"}}})
 });
 
@@ -49,16 +49,15 @@ bot.on("guildMemberRemove", member => { //Quand un membre quitte dans le serveur
     bot.channels.get('455070342612910081').sendMessage(member.user + " a quitté la DexSia, le message s'est bien affiché")  //console
 });
 bot.on('message', message => {
-    
+    var author = message.member.displayName;
         if (message.channel.id === activitDXS) {
     var value = message.content;
     bot.user.setPresence({ game: { name: value}})
-        .then(bot.channels.get(consauleDXS).sendMessage({embed: {color: 0x202020, author: {name: "Je suis en ligne :D",
+        .then(bot.channels.get(consauleDXS).sendMessage({embed: {color: 0x202020, author: {name: "Je joue maintenant à " + value + "grâce à " + author,
       icon_url: "https://cdn.discordapp.com/icons/441664261454823444/1cced0ad87913d0d5232dce11bedb70f.png"}}}))};
     
     if (!message.content.startsWith(prefix)) return;
     var args = message.content.substring(prefix.length).split(" ");
-    var author = message.member.displayName;
     switch (args[0].toLowerCase()){
 
         case "oui":
