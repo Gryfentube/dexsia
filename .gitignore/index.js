@@ -46,7 +46,7 @@ bot.on('message', message => {
         bot.user.setPresence({ game: { name: value}})
             .then(bot.channels.get(consauleDXS).sendMessage({embed: {color: 0x202020, author: {name: "Je joue maintenant à " + value + " grâce à " + author,
                                                                icon_url: "https://cdn.discordapp.com/icons/441664261454823444/1cced0ad87913d0d5232dce11bedb70f.png"}}}))};
-
+});
 bot.on("guildMemberAdd", member => { //Quand un membre entre dans le serveur
     var welcomeDXS = member.guild.channels.find("name", "welcome"); //variable pour le salon welcome
     bot.channels.get(welcomeDXS).sendMessage('Passe un bon moment dans la **DexSia** ' + member.user + ' 😉') //envoie le message de bienvenue
@@ -58,11 +58,3 @@ bot.on("guildMemberRemove", member => { //Quand un membre quitte dans le serveur
     bot.channels.get(aurevoirDXS).sendMessage('**' + member.displayName + '** est partie. Rest in pepperoni...') //envoie le message de aurevoir
     bot.channels.get(consauleDXS).sendMessage(member.user + " a quitté la DexSia, le message s'est bien affiché")  //console
 });
-bot.on('message', message => {
-    var author = message.member.displayName;
-        if (message.channel.id === activitDXS) {
-    var value = message.content;
-    bot.user.setPresence({ game: { name: value}})
-        .then(bot.channels.get(consauleDXS).sendMessage({embed: {color: 0x202020, author: {name: "Je joue maintenant à " + value + " grâce à " + author,
-      icon_url: "https://cdn.discordapp.com/icons/441664261454823444/1cced0ad87913d0d5232dce11bedb70f.png"}}}))}
-});});
