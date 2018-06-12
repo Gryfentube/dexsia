@@ -65,3 +65,4 @@ bot.on('message', message => {
     bot.user.setPresence({ game: { name: value}})
         .then(bot.channels.get(consauleDXS).sendMessage({embed: {color: 0x202020, author: {name: "Je joue maintenant à " + value + " grâce à " + author,
       icon_url: "https://cdn.discordapp.com/icons/441664261454823444/1cced0ad87913d0d5232dce11bedb70f.png"}}}))}
+});});
