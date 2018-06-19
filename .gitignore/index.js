@@ -52,7 +52,7 @@ bot.on('message', message => {
                                                                icon_url: "https://cdn.discordapp.com/icons/441664261454823444/1cced0ad87913d0d5232dce11bedb70f.png"},
                                                                fields: [{name: "L'annonce est :", value: value}]}}))}; //console
     if (message.content === "_taco") {
-        message.channel.sendMessage("<:TACO11:449684235838554114> <:TACO12:449684236119572483> <:TACO13:449684236266504192> <:TACO14:449684236333744128>\n<:TACO21:449684236715294730> <:TACO22:449684236723814411> <:TACO23:449684237721796608> <:TACO24:449684236899713025>\n<:TACO31:449684237508018176> <:TACO32:449684237650493450> <:TACO33:449684237726253056> <:TACO34:449684237940031488>");
+        message.channel.sendMessage("<:TACO11:449684235838554114><:TACO12:449684236119572483><:TACO13:449684236266504192><:TACO14:449684236333744128>\n<:TACO21:449684236715294730><:TACO22:449684236723814411><:TACO23:449684237721796608><:TACO24:449684236899713025>\n<:TACO31:449684237508018176><:TACO32:449684237650493450><:TACO33:449684237726253056><:TACO34:449684237940031488>");
     }
 });
 bot.on("guildMemberAdd", member => { //Quand un membre entre dans le serveur
