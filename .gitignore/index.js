@@ -96,7 +96,6 @@ bot.on('message', message => {
         if (randnum == 0) {
             message.channel.sendMessage("Je crois que vous vous trompez d'assistant " + author);
             }
-        else {message.channel.sendMessage("Ah lol il y a une erreur")}
         
     }
     
