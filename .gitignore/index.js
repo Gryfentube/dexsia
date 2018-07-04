@@ -99,7 +99,7 @@ bot.on('message', message => {
         
     }
     if (message.content.includes("sens de la vie")) {
-    message.channel.sendMessage("Le sens de la vie est... En fait je ne sais pas");
+    message.channel.sendMessage("JE SAIS PAS MOA");
     }
     
 });
