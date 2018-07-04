@@ -86,7 +86,7 @@ bot.on('message', message => {
     message.channel.sendMessage("Heeeellooo " + author + " ! How are you ? <:051happy1:458741130708779028>");
     }
     if (message.content.startsWith("Hola")) {
-    message.channel.sendMessage("Hoola " + author + " ! Como estas ? <:051happy1:458741130708779028>");
+    message.channel.sendMessage("Hooola " + author + " ! Como estas ? <:051happy1:458741130708779028>");
     }
     if ((message.content.startsWith("Ok google")) || (message.content.startsWith("Ok Google"))) {
         random();
@@ -113,8 +113,14 @@ bot.on('message', message => {
     if (message.content.includes("Père Noël existe")) {
     message.channel.sendMessage("Le père Noël est réel, comme moi");
     }
-    if (message.content.includes("Dexsia qu'est-ce que tu fais")) {
+    if (message.content.includes("DexSia qu'est-ce que tu fais")) {
     message.channel.sendMessage("Je joue à " + activ + " le plus souvent, mais là je sais pas");
+    }
+    if (message.content.includes("DexSia qu'est-ce que tu fais")) {
+    message.channel.sendMessage("Je joue à " + activ + " le plus souvent, mais là je sais pas");
+    }
+    if (message.content.includes("Divise 0 par 0")) {
+    message.channel.sendMessage("Imaginez que vous avez O biscuit et que vous les partagez à part égale entre O ami. Combien de biscuits ont chacun de vos amis? Vous voyez, ce n'est pas logique.");
     }
     
 });
