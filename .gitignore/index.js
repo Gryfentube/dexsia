@@ -88,7 +88,7 @@ bot.on('message', message => {
     if (message.content.startsWith("Hola")) {
     message.channel.sendMessage("Hoola " + author + " ! Como estas ? <:051happy1:458741130708779028>");
     }
-    if (message.content.startsWith("Ok google")) {
+    if ((message.content.startsWith("Ok google")) || (message.content.startsWith("Ok Google"))) {
         random();
         if (randnum == 1) {
             message.channel.sendMessage("Wow... Le malaise <:051scared1:458741159808860164>");
