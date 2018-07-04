@@ -71,7 +71,7 @@ bot.on('message', message => {
         if ((minute < 18) && (minute > 6)) {
                 message.channel.sendMessage("Tu aurais pu dire Bonjour " + author + ", il est seulement " + heure + "h" + minute + " tu sais <:051tongue2:458741158395510784>");
         }
-        else {message.channel.sendMessage("Bonsoir " + author + " ! <:051smile1:458741159288766464>");}
+        else {message.channel.sendMessage("Bonswar " + author + " ! <:051smile1:458741159288766464>");}
     
     }
 });
