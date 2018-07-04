@@ -137,8 +137,8 @@ bot.on('message', message => {
     
     if (message.attachments.size > 0) {
         
-        message.react('👍');
-        message.react('👎');        
+        message.react('👍')
+        .then(message.react('👎');)        
     
     }
     
