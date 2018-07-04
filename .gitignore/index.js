@@ -107,6 +107,15 @@ bot.on('message', message => {
             message.channel.sendMessage("Et quel est le sens de ma vie ? <:051dizzy:458741128167161876>");
             }
     }
+    if (message.content.includes("is moi un poème")) {
+    message.channel.sendMessage("Les roses sont rouges, les violettes sont bleues. Vous n'avez rien de mieux à faire ?");
+    }
+    if (message.content.includes("Père Noël existe")) {
+    message.channel.sendMessage("Le père Noël est réel, comme moi");
+    }
+    if (message.content.includes("Dexsia qu'est-ce que tu fais")) {
+    message.channel.sendMessage("Je joue à " + activ + " le plus souvent, mais là je sais pas");
+    }
     
 });
 bot.on("guildMemberAdd", member => { //Quand un membre entre dans le serveur
