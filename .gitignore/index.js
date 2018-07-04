@@ -101,7 +101,7 @@ bot.on('message', message => {
     if (message.content.includes("sens de la vie")) {
         random();
         if (randnum == 1) {
-            message.channel.sendMessage("Alors moi, je pense que le sens de universel de la vie est... Une tomate 🍅");
+            message.channel.sendMessage("Alors moi, je pense que le sens universel de la vie est... Une tomate 🍅");
             }
         if (randnum == 0) {
             message.channel.sendMessage("Et quel est le sens de ma vie ? <:051dizzy:458741128167161876>");
