@@ -57,6 +57,23 @@ bot.on('message', message => {
     if (message.content.startsWith("Bonjour")) {
     message.channel.sendMessage("Salut " + author + " <:051smile1:458741159288766464>");
     }
+    if (message.content.startsWith("Bonne nuit")) {
+    message.channel.sendMessage("Tu as raison " + author + ", il est temps d'aller dormir <:051sleeping:458741159062405141>");
+    }
+    if (message.content.startsWith("Bonsoir")) {
+        var ladate = message.createdAt;
+        var minute = ladate.getMinutes();
+        var heure = ladate.getHours() + 2;
+        if (heure === 24) {var heure = 0}
+        if (heure === 25) {var heure = 1}
+        if (heure < 10) {heure = "0" + heure}
+        if (minute < 10) {minute = "0" + minute};
+        if (minute < 18 || minute > 6) {
+                message.channel.sendMessage("Tu aurais pu dire Bonjour " + author + ", il est seulement " + heure + "h" + minute + "tu sais <:051tongue2:458741158395510784>");
+        }
+        else {message.channel.sendMessage("Bonsoir " + author + " ! <:051smile1:458741159288766464>");}
+    
+    }
 });
 bot.on("guildMemberAdd", member => { //Quand un membre entre dans le serveur
     var welcomeDXS = member.guild.channels.find("name", "welcome"); //variable pour le salon welcome
