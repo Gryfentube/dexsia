@@ -68,7 +68,7 @@ bot.on('message', message => {
         if (heure === 25) {var heure = 1}
         if (heure < 10) {heure = "0" + heure}
         if (minute < 10) {minute = "0" + minute};
-        if (minute < 18 || minute > 6) {
+        if (minute < 18 && minute > 6) {
                 message.channel.sendMessage("Tu aurais pu dire Bonjour " + author + ", il est seulement " + heure + "h" + minute + " tu sais <:051tongue2:458741158395510784>");
         }
         else {message.channel.sendMessage("Bonsoir " + author + " ! <:051smile1:458741159288766464>");}
