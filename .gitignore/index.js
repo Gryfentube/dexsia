@@ -82,13 +82,13 @@ bot.on('message', message => {
         else {message.channel.sendMessage("Bonswar " + author + " ! <:051smile1:458741159288766464>");}
     
     }
-    if (message.content.startsWith("Hello")) {
+    if (message.content.includes("Hello")) {
     message.channel.sendMessage("Heeeellooo " + author + " ! How are you ? <:051happy1:458741130708779028>");
     }
     if (message.content.startsWith("Hola")) {
     message.channel.sendMessage("Hooola " + author + " ! Como estas ? <:051happy1:458741130708779028>");
     }
-    if ((message.content.startsWith("Ok google")) || (message.content.startsWith("Ok Google"))) {
+    if ((message.content.includes("Ok google")) || (message.content.startsWith("Ok Google"))) {
         random();
         if (randnum == 1) {
             message.channel.sendMessage("Wow... Le malaise <:051scared1:458741159808860164>");
@@ -116,8 +116,8 @@ bot.on('message', message => {
     if (message.content.includes("DexSia qu'est-ce que tu fais")) {
     message.channel.sendMessage("Je joue à " + activ + " le plus souvent, mais là je sais pas");
     }
-    if (message.content.includes("DexSia qu'est-ce que tu fais")) {
-    message.channel.sendMessage("Je joue à " + activ + " le plus souvent, mais là je sais pas");
+    if (message.content.includes("Tu as quel âge")) {
+    message.channel.sendMessage("J'ai {nombre entre 23172912379 et 3820920980298029} ans");
     }
     if (message.content.includes("Divise 0 par 0")) {
     message.channel.sendMessage("Imaginez que vous avez O biscuit et que vous les partagez à part égale entre O ami. Combien de biscuits ont chacun de vos amis? Vous voyez, ce n'est pas logique.");
