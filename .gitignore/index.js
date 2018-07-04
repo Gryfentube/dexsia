@@ -29,7 +29,7 @@ bot.login(process.env.TOKEN);
 function getRandomIntInclusive(min, max) {
   min = Math.ceil(0);
   max = Math.floor(1);
-  randnum = Math.floor(Math.random() * (max - min +1)) + min;
+  randnum = Math.floor(Math.random() * (max - min +1)) + min;}
 
 var prefix = ("_"); //définir le prefix du bot
 var activ = ("éradiquer les penguins"); //modifier la valeur entre guillemets pour changer son état au démarage
