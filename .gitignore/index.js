@@ -99,7 +99,7 @@ bot.on('message', message => {
         
     }
     if (message.content.includes("sens de la vie")) {
-    message.channel.sendMessage("JE SAIS PAS MOA");
+    message.channel.sendMessage("Et quel est le sens de ma vie ? <:051dizzy:458741128167161876>");
     }
     
 });
