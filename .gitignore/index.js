@@ -122,6 +122,14 @@ bot.on('message', message => {
     if (message.content.includes("Divise 0 par 0")) {
     message.channel.sendMessage("Imaginez que vous avez O biscuit et que vous les partagez à part égale entre O ami. Combien de biscuits ont chacun de vos amis? Vous voyez, ce n'est pas logique.");
     }
+    if (message.content.includes("e suis DexSia")) {
+    message.channel.sendMessage("Ce nom me dis quelque chose... <:051sweat:458741158105841665>");
+    }
+    if (message.content.includes("pouse moi")) {
+    message.channel.sendMessage("Soyons juste amis d'accord ? <:051smile:458741156017078273>");
+    }
+    
+    
     
 });
 bot.on("guildMemberAdd", member => { //Quand un membre entre dans le serveur
