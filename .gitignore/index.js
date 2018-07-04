@@ -26,6 +26,11 @@ bot.login(process.env.TOKEN);
     const alladmin = "(message.member.id === jack) || (message.member.id === gryf)"; //Jack ou Gryf (dans un if généralement)
 //end
 
+function getRandomIntInclusive(min, max) {
+  min = Math.ceil(0);
+  max = Math.floor(1);
+  randnum = Math.floor(Math.random() * (max - min +1)) + min;
+
 var prefix = ("_"); //définir le prefix du bot
 var activ = ("éradiquer les penguins"); //modifier la valeur entre guillemets pour changer son état au démarage
 var values = ("empty"); //empecher les soucis de values
@@ -82,7 +87,18 @@ bot.on('message', message => {
     }
     if (message.content.startsWith("Hola")) {
     message.channel.sendMessage("Hoola " + author + " ! Como estas ? <:051happy1:458741130708779028>");
-    };
+    }
+    if (message.content.startsWith("Ok google")) {
+        
+        if (randnum == 1) {
+            message.channel.sendMessage("Wow... Le malaise <:051scared1:458741159808860164>");
+            }
+        if (randnum == 0) {
+            message.channel.sendMessage("Je crois que vous vous trompez d'assistant " + author);
+            }
+        else {message.channel.sendMessage("Ah lol il y a une erreur")}
+        
+    }
     
 });
 bot.on("guildMemberAdd", member => { //Quand un membre entre dans le serveur
