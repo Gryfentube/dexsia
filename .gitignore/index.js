@@ -82,9 +82,14 @@ bot.on('message', message => {
     }
     if (message.content.startsWith("Hola")) {
     message.channel.sendMessage("Hoola " + author + " ! Como estas ? <:051happy1:458741130708779028>");
-    }
-    if (((message.content.includes("mdr")) || (message.content.includes("MDR")) && (!author = "DexSia")) {
-    message.channel.sendMessage("Il y a quelque chose dans ton message qui ne me plait pas ");
+    };
+    if ((message.content.includes("mdr")) || (message.content.includes("MDR")) {
+        if (author = "DexSia") {
+    message.channel.sendMessage("Ce n'est pas bien");
+        }
+        else {
+            message.channel.sendMessage("Ne met pas mdr");
+       }
     }
     
 });
