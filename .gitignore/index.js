@@ -63,10 +63,10 @@ bot.on('message', message => {
         message.channel.sendMessage("Voici des glaçages de cupcakes <:051vomiting1:458741160257781790> https://static.cuisineaz.com/610x610/i37589-cupcakes-chocolat-vin-rouge-insert-de-poire-et-glacage-creme-fouettee.png http://www.bestcakes.fr/photo/cupcake/recette/195/recette-cupcake-citron-glacage-bleuet-684.jpg http://cuisinemoiunmouton.com/wp-content/uploads/2014/06/Pist1.jpg");
     }
     if ((message.content.startsWith("Bonjour")) || (message.content.startsWith("Salut")) || (message.content.startsWith("Yo")) || (message.content.startsWith("bonjour"))) {
-    message.channel.sendMessage("Hey ! Salut " + author + " ! <:051smile1:458741159288766464>");
+    message.channel.sendMessage("Hey ! Saluuuuuut " + author + " ! <:051smile1:458741159288766464>");
     }
     if (message.content.startsWith("Bonne nuit")) {
-    message.channel.sendMessage("Tu as raison " + author + ", il est temps d'aller dormir <:051sleeping:458741159062405141> Bonne nuit !");
+    message.channel.sendMessage("Tu as raison " + author + ", il est temps d'aller dormir <:051sleeping:458741159062405141> Bonne nouit !");
     }
     if (message.content.startsWith("Bonsoir")) {
         var ladate = message.createdAt;
