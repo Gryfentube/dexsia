@@ -54,7 +54,7 @@ bot.on('message', message => {
     if (message.content === "_taco") {
         message.channel.sendMessage("<:TACO11:449684235838554114><:TACO12:449684236119572483><:TACO13:449684236266504192><:TACO14:449684236333744128>\n<:TACO21:449684236715294730><:TACO22:449684236723814411><:TACO23:449684237721796608><:TACO24:449684236899713025>\n<:TACO31:449684237508018176><:TACO32:449684237650493450><:TACO33:449684237726253056><:TACO34:449684237940031488>");
     }
-    if (!message.content.startsWith("Bonjour")) {
+    if (message.content.startsWith("Bonjour")) {
     message.channel.sendMessage("Salut " + author + " <:051smile1:458741159288766464>");
     }
 });
