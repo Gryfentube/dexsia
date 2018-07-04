@@ -31,6 +31,12 @@ function random(min, max) {
   max = Math.floor(1);
   randnum = Math.floor(Math.random() * (max - min +1)) + min;}
 
+function attachIsImage(msgAttach) {
+    var url = msgAttach.url;
+    //True if this url is a png image.
+    return url.indexOf("png", url.length - "png".length /*or 3*/) !== -1;}
+
+
 var prefix = ("_"); //définir le prefix du bot
 var activ = ("éradiquer les penguins"); //modifier la valeur entre guillemets pour changer son état au démarage
 var values = ("empty"); //empecher les soucis de values
@@ -127,6 +133,13 @@ bot.on('message', message => {
     }
     if (message.content.includes("pouse moi")) {
     message.channel.sendMessage("Soyons juste amis d'accord ? <:051smile:458741156017078273>");
+    }
+    
+    if (message.attachments.size > 0) {
+        if (message.attachments.every(attachIsImage)){
+        message.react('👍');
+        message.react('👎');        
+        }
     }
     
     
