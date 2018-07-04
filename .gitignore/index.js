@@ -136,10 +136,10 @@ bot.on('message', message => {
     }
     
     if (message.attachments.size > 0) {
-        if (message.attachments.every(attachIsImage)){
+        
         message.react('👍');
         message.react('👎');        
-        }
+    
     }
     
     
