@@ -26,7 +26,7 @@ bot.login(process.env.TOKEN);
     const alladmin = "(message.member.id === jack) || (message.member.id === gryf)"; //Jack ou Gryf (dans un if généralement)
 //end
 
-function getRandomIntInclusive(min, max) {
+function random(min, max) {
   min = Math.ceil(0);
   max = Math.floor(1);
   randnum = Math.floor(Math.random() * (max - min +1)) + min;}
@@ -89,7 +89,7 @@ bot.on('message', message => {
     message.channel.sendMessage("Hoola " + author + " ! Como estas ? <:051happy1:458741130708779028>");
     }
     if (message.content.startsWith("Ok google")) {
-        
+        random();
         if (randnum == 1) {
             message.channel.sendMessage("Wow... Le malaise <:051scared1:458741159808860164>");
             }
