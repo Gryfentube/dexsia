@@ -198,6 +198,9 @@ bot.on('message', message => {
     if (message.content.includes("ui va là")) {
     message.channel.sendMessage("Inspecteur gadget 🕵️<:051cool1:458741115059830785>");
     }
+    if (message.content.includes("1 2 3")) {
+    message.channel.sendMessage("Viva l'Italia ! 🇮🇹 🇮🇹 🇮🇹 🇮🇹");
+    }
     
     if ((message.content.includes("ouce")) && (message.content.includes("bleu"))) {
         message.react(bot.emojis.get("434400113356701698"))
