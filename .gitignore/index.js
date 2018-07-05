@@ -156,7 +156,7 @@ bot.on('message', message => {
             message.channel.sendMessage("NAN MAIS BANDE D'ENFANT À DIRE PROUTE");
             }
         if (randnum == 0) {
-            message.channel.sendMessage("Ah nan mais ça pu... Vous êtes serieux ?");
+            message.channel.sendMessage("Ah nan mais ça pu... Vous êtes sérieux ?");
             }
         if (randnum == 2) {
             message.channel.sendMessage("C'est encore Jack c'est ça ?! <:051vomiting:458741158412156929> <:051sick:458741159079051289>");
@@ -203,6 +203,9 @@ bot.on('message', message => {
     }
     if (message.content.includes("lurpy")) {
     message.channel.sendMessage("Oh mon dieu je coule ! <:051astonished1:458741111884873748><:051cry:458741122169044994>");
+    }
+    if (message.content.includes("Phrase à changer")) {
+    message.channel.sendMessage("La réponse");
     }
     
     if ((message.content.includes("ouce")) && (message.content.includes("bleu"))) {
