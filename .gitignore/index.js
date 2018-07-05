@@ -91,8 +91,8 @@ bot.on('message', message => {
     if (message.content.includes("Hello")) {
     message.channel.sendMessage("Heeeellooo " + author + " ! How are you ? <:051happy1:458741130708779028>");
     }
-    if (message.content.startsWith("Hola")) {
-    message.channel.sendMessage("Hooola " + author + " ! Como estas ? <:051happy1:458741130708779028>");
+    if (message.content.startsWith("Holà")) {
+    message.channel.sendMessage("Hooolà " + author + " ! Como estas ? <:051happy1:458741130708779028>");
     }
     if ((message.content.includes("Ok google")) || (message.content.startsWith("Ok Google"))) {
         random();
@@ -133,6 +133,9 @@ bot.on('message', message => {
     }
     if (message.content.includes("pouse moi")) {
     message.channel.sendMessage("Soyons juste amis d'accord ? <:051smile:458741156017078273>");
+    }
+    if (message.content.includes("ai faim")) {
+    message.channel.sendMessage("Va te nourir, je ne suis pas ta mère");
     }
     
     if (message.attachments.size > 0) {
