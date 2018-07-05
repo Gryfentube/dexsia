@@ -198,6 +198,10 @@ bot.on('message', message => {
     if ((message.content.includes("ouce")) && (message.content.includes("bleu"))) {
         message.react(bot.emojis.get("434400113356701698"))
     }
+    if (message.content.includes("pomme")) {
+        message.react('🍎');
+        message.react('🍏')
+    }
     
     if (message.attachments.size > 0) {
         
