@@ -201,6 +201,9 @@ bot.on('message', message => {
     if (message.content.includes("1 2 3")) {
     message.channel.sendMessage("Viva l'Italia ! 🇮🇹 🇮🇹 🇮🇹 🇮🇹");
     }
+    if (message.content.includes("lurpy")) {
+    message.channel.sendMessage("Oh mon dieu je coule ! <:051astonished1:458741111884873748><:051cry:458741122169044994>");
+    }
     
     if ((message.content.includes("ouce")) && (message.content.includes("bleu"))) {
         message.react(bot.emojis.get("434400113356701698"))
