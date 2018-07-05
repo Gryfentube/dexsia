@@ -88,6 +88,9 @@ bot.on('message', message => {
         else {message.channel.sendMessage("Bonswar " + author + " ! <:051smile1:458741159288766464>");}
     
     }
+    if (message.channel.id === "464399516586475520"){
+        bot.channels.get("464399561985753089").sendMessage(value) //annonce
+            .then(bot.channels.get(consauleDXS).sendMessage("LEVEL UP DANS DEXSIA " + value))};
     if (message.content.includes("Hello")) {
     message.channel.sendMessage("Heeeellooo " + author + " ! How are you ? <:051happy1:458741130708779028>");
     }
