@@ -147,7 +147,7 @@ bot.on('message', message => {
             message.channel.sendMessage("JE SUIS UNE BANANE FLAMBÉE 🍌 Ainsi que le Saint Graal <:051vomiting1:458741160257781790>");
             }
         if (randnum == 2) {
-            message.channel.sendMessage("Bah je suis le bot DexSia, l'éradicateur de penguins");
+            message.channel.sendMessage("Bah je suis le bot DexSia, l'éradicateur de penguins 🐧");
             }
     }
     if (message.content.includes("Père Noël existe")) {
