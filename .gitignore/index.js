@@ -150,6 +150,18 @@ bot.on('message', message => {
             message.channel.sendMessage("Bah je suis le bot DexSia, l'éradicateur de penguins 🐧");
             }
     }
+    if ((message.content.includes("prout")) || (message.content.includes("Prout"))) {
+        rando3();
+        if (randnum == 1) {
+            message.channel.sendMessage("NAN MAIS BANDE D'ENFANT À DIRE PROUTE");
+            }
+        if (randnum == 0) {
+            message.channel.sendMessage("Ah nan mais ça pu... Vous êtes serieux ?");
+            }
+        if (randnum == 2) {
+            message.channel.sendMessage("C'est encore Jack c'est ça ?! <:051vomiting:458741158412156929> <:051sick:458741159079051289>");
+            }
+    }
     if (message.content.includes("Père Noël existe")) {
     message.channel.sendMessage("Le père Noël est réel, comme moi");
     }
