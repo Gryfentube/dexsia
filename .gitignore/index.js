@@ -177,6 +177,12 @@ bot.on('message', message => {
     if ((message.content.includes("Jack")) && (message.content.includes("fou"))) {
     message.channel.sendMessage("Nan mais monsieur Joker est fou, c'est un fait 🃏 <:051mask:458741159079051285>");
     }
+    if (message.content.includes("mdr")) {
+    message.channel.sendMessage("Oh que oui c'est rigolo " + author + " <:051tongue1:458741158789513226> <:051vomiting1:458741160257781790> <:051smiling:458741159553138719>");
+    }
+    if ((message.content.includes("top 1")) && (message.content.includes("u as"))) {
+    message.channel.sendMessage("Oui j'ai top 1 aujourd'hui <:dxsTOP1:447325154687844352> <:051smile1:458741159288766464>");
+    }
     
     if (message.attachments.size > 0) {
         
