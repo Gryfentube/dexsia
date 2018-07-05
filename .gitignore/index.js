@@ -126,7 +126,7 @@ bot.on('message', message => {
     if (message.content.includes("ui est ton chef")) {
     message.channel.sendMessage("La question ne se pose pas, c'est moi même <:051cool1:458741115059830785>");
     }
-    if (message.content.includes("mange ce soir")) {
+    if ((message.content.includes("on mange")) || (message.content.includes("mange quoi"))) {
         rando3();
         if (randnum == 1) {
             message.channel.sendMessage("Alors moi, ce soir je mange des mangeoirs <:051cool:458741113038176267>");
@@ -136,6 +136,18 @@ bot.on('message', message => {
             }
         if (randnum == 2) {
             message.channel.sendMessage("Ce soir c'est pâtes aux sucres pour moa ! <:051happy2:458741131627331605>");
+            }
+    }
+    if ((message.content.includes("ui est-tu")) || (message.content.includes("u es qui"))) {
+        rando3();
+        if (randnum == 1) {
+            message.channel.sendMessage("Un agent du FBI <:051smirking:458741156092837918>");
+            }
+        if (randnum == 0) {
+            message.channel.sendMessage("JE SUIS UNE BANANE FLAMBÉE 🍌 Ainsi que le Saint Graal <:051vomiting1:458741160257781790>");
+            }
+        if (randnum == 2) {
+            message.channel.sendMessage("Bah je suis DexSia, l'éradicateur de penguins");
             }
     }
     if (message.content.includes("Père Noël existe")) {
