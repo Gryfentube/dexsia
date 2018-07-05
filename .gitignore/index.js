@@ -132,7 +132,7 @@ bot.on('message', message => {
             message.channel.sendMessage("Alors moi, ce soir je mange des mangeoirs <:051cool:458741113038176267>");
             }
         if (randnum == 0) {
-            message.channel.sendMessage("Moi ce soir je mange des Ecteur ! <:051happy2:458741131627331605>");
+            message.channel.sendMessage("Moi ce soir je mange Ecteur ! <:051happy2:458741131627331605>");
             }
         if (randnum == 2) {
             message.channel.sendMessage("Ce soir c'est pâtes aux sucres pour moa ! <:051happy2:458741131627331605>");
