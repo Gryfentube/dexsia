@@ -196,7 +196,7 @@ bot.on('message', message => {
     message.channel.sendMessage("Oui j'ai top 1 aujourd'hui <:dxsTOP1:447325154687844352> <:051smile1:458741159288766464>");
     }
     if (message.content.includes("ui va là")) {
-    message.channel.sendMessage("Inspecteur Braguette 🕵️<:051cool1:458741115059830785>");
+    message.channel.sendMessage("Inspecteur gadget 🕵️<:051cool1:458741115059830785>");
     }
     
     if ((message.content.includes("ouce")) && (message.content.includes("bleu"))) {
