@@ -195,6 +195,10 @@ bot.on('message', message => {
     if ((message.content.includes("top 1")) && (message.content.includes("u as"))) {
     message.channel.sendMessage("Oui j'ai top 1 aujourd'hui <:dxsTOP1:447325154687844352> <:051smile1:458741159288766464>");
     }
+    if (message.content.includes("ui va là")) {
+    message.channel.sendMessage("Inspecteur Braguette 🕵️<:051cool1:458741115059830785>");
+    }
+    
     if ((message.content.includes("ouce")) && (message.content.includes("bleu"))) {
         message.react(bot.emojis.get("434400113356701698"))
     }
