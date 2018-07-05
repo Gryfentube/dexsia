@@ -26,9 +26,13 @@ bot.login(process.env.TOKEN);
     const alladmin = "(message.member.id === jack) || (message.member.id === gryf)"; //Jack ou Gryf (dans un if généralement)
 //end
 
-function random(min, max) {
+function rando2(min, max) {
   min = Math.ceil(0);
   max = Math.floor(1);
+  randnum = Math.floor(Math.random() * (max - min +1)) + min;}
+function rando3(min, max) {
+  min = Math.ceil(0);
+  max = Math.floor(2);
   randnum = Math.floor(Math.random() * (max - min +1)) + min;}
 
 function attachIsImage(msgAttach) {
@@ -98,7 +102,7 @@ bot.on('message', message => {
     message.channel.sendMessage("Hooolà " + author + " ! Como estas ? <:051happy1:458741130708779028>");
     }
     if ((message.content.includes("Ok google")) || (message.content.startsWith("Ok Google"))) {
-        random();
+        rando2();
         if (randnum == 1) {
             message.channel.sendMessage("Wow... Le malaise <:051scared1:458741159808860164>");
             }
@@ -108,7 +112,7 @@ bot.on('message', message => {
         
     }
     if (message.content.includes("sens de la vie")) {
-        random();
+        rando2();
         if (randnum == 1) {
             message.channel.sendMessage("Alors moi, je pense que le sens universel de la vie est... Une tomate 🍅");
             }
@@ -118,6 +122,21 @@ bot.on('message', message => {
     }
     if (message.content.includes("is moi un poème")) {
     message.channel.sendMessage("Les roses sont rouges, les violettes sont bleues. Vous n'avez rien de mieux à faire ?");
+    }
+    if (message.content.includes("ui est ton chef")) {
+    message.channel.sendMessage("La question ne se pose pas, c'est moi même <:051cool1:458741115059830785>");
+    }
+    if (message.content.includes("mange ce soir")) {
+        rando3();
+        if (randnum == 1) {
+            message.channel.sendMessage("Alors moi, ce soir je mange des mangeoirs <:051cool:458741113038176267>");
+            }
+        if (randnum == 0) {
+            message.channel.sendMessage("Moi ce soir je mange des Ecteur ! <:051happy2:458741131627331605>");
+            }
+        if (randnum == 2) {
+            message.channel.sendMessage("Ce soir c'est pâtes aux sucres pour moa ! <:051happy2:458741131627331605>");
+            }
     }
     if (message.content.includes("Père Noël existe")) {
     message.channel.sendMessage("Le père Noël est réel, comme moi");
