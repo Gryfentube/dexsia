@@ -174,7 +174,7 @@ bot.on('message', message => {
     if (message.content.includes("esh alor")) {
     message.channel.sendMessage("Oh <:051mute:458741153915731993> Je vote pour un ban <:051cool:458741113038176267>");
     }
-    if ((message.content.includes("Jack")) || (message.content.includes("fou"))) {
+    if ((message.content.includes("Jack")) && (message.content.includes("fou"))) {
     message.channel.sendMessage("Nan mais monsieur Joker est fou, c'est un fait 🃏 <:051mask:458741159079051285>");
     }
     
