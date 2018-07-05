@@ -137,6 +137,9 @@ bot.on('message', message => {
     if (message.content.includes("ai faim")) {
     message.channel.sendMessage("Va te nourir, je ne suis pas ta mère");
     }
+    if (message.content.includes("esh alor")) {
+    message.channel.sendMessage("Oh <:051mute:458741153915731993> Je vote pour un ban <:051cool:458741113038176267>");
+    }
     
     if (message.attachments.size > 0) {
         
