@@ -269,7 +269,7 @@ bot.on('message', message => {
             }
         
         }
-        if (message.content.includes("CECI DOIT ÊTRE CHANGÉ")) {
+        if (message.content.includes("CECI DOIT ÊTRE CHANGÉE")) {
             rando2();
             if (randnum == 1) {
                 message.channel.sendMessage("LE BOT REPOND ICI");
