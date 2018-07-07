@@ -245,7 +245,7 @@ bot.on('message', message => {
                 message.channel.sendMessage("LE BOT REPOND ICI");
             }
             if (randnum == 0) {
-                message.channel.sendMessage("LE BOT REPOND ÇA UNE FOIS SUR DEUX";
+                message.channel.sendMessage("LE BOT REPOND ÇA UNE FOIS SUR DEUX");
             }
         
         }
@@ -255,7 +255,7 @@ bot.on('message', message => {
                 message.channel.sendMessage("LE BOT REPOND ICI");
             }
             if (randnum == 0) {
-                message.channel.sendMessage("LE BOT REPOND ÇA UNE FOIS SUR DEUX";
+                message.channel.sendMessage("LE BOT REPOND ÇA UNE FOIS SUR DEUX");
             }
         
         }
@@ -265,7 +265,7 @@ bot.on('message', message => {
                 message.channel.sendMessage("LE BOT REPOND ICI");
             }
             if (randnum == 0) {
-                message.channel.sendMessage("LE BOT REPOND ÇA UNE FOIS SUR DEUX";
+                message.channel.sendMessage("LE BOT REPOND ÇA UNE FOIS SUR DEUX");
             }
         
         }
@@ -275,7 +275,7 @@ bot.on('message', message => {
                 message.channel.sendMessage("LE BOT REPOND ICI");
             }
             if (randnum == 0) {
-                message.channel.sendMessage("LE BOT REPOND ÇA UNE FOIS SUR DEUX";
+                message.channel.sendMessage("LE BOT REPOND ÇA UNE FOIS SUR DEUX");
             }
         
         }
