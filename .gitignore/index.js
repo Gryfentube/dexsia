@@ -294,7 +294,9 @@ bot.on('message', message => {
             message.react('🍰');
         }
         if (message.member.id === "337269254208618507") { // ECTEUR
-            message.react(bot.emojis.get("465177946349502465"))
+            message.react(bot.emojis.get("465177946349502465"));
+            message.react(bot.emojis.get("465180425225240578"));
+            
         }
         if (message.member.id === "239310906981482496") { // JACK
             message.react(bot.emojis.get("458741128167161876"))
@@ -304,6 +306,9 @@ bot.on('message', message => {
         }
         if (message.member.id === "313117398171648000") { //Wena
             message.react('😻');
+        }
+        if (message.member.id === "266729241549340672") { //Rock
+            message.react('🌭');
         }
         
     
