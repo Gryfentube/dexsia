@@ -69,158 +69,163 @@ bot.on('message', message => {
     if (message.content === "_taco") {
         message.channel.sendMessage("<:TACO11:449684235838554114><:TACO12:449684236119572483><:TACO13:449684236266504192><:TACO14:449684236333744128>\n<:TACO21:449684236715294730><:TACO22:449684236723814411><:TACO23:449684237721796608><:TACO24:449684236899713025>\n<:TACO31:449684237508018176><:TACO32:449684237650493450><:TACO33:449684237726253056><:TACO34:449684237940031488>");
     }
-    if (message.content === "Montre moi des glaçages de cupcake") {
-        message.channel.sendMessage("Voici des glaçages de cupcakes <:051vomiting1:458741160257781790> https://static.cuisineaz.com/610x610/i37589-cupcakes-chocolat-vin-rouge-insert-de-poire-et-glacage-creme-fouettee.png http://www.bestcakes.fr/photo/cupcake/recette/195/recette-cupcake-citron-glacage-bleuet-684.jpg http://cuisinemoiunmouton.com/wp-content/uploads/2014/06/Pist1.jpg");
-    }
-    if ((message.content.startsWith("Bonjour")) || (message.content.startsWith("Salut")) || (message.content.startsWith("Yo")) || (message.content.startsWith("bonjour"))) {
-    message.channel.sendMessage("Hey ! Saluuuuuut " + author + " ! <:051smile1:458741159288766464>");
-    }
-    if (message.content.startsWith("Bonne nuit")) {
-    message.channel.sendMessage("Tu as raison " + author + ", il est temps d'aller dormir <:051sleeping:458741159062405141> Bonne nouit !");
-    }
-    if (message.content.startsWith("Bonsoir")) {
-        var ladate = message.createdAt;
-        var minute = ladate.getMinutes();
-        var heure = ladate.getHours() + 2;
-        if (heure === 24) {var heure = 0}
-        if (heure === 25) {var heure = 1}
-        if (heure < 10) {heure = "0" + heure}
-        if (minute < 10) {minute = "0" + minute};
-        if ((minute < 18) && (minute > 6)) {
-                message.channel.sendMessage("Tu aurais pu dire Bonjour " + author + ", il est seulement " + heure + "h" + minute + " tu sais <:051tongue2:458741158395510784>");
+    if (message.channel.id === "454997194207133716") {
+        if (message.content === "Montre moi des glaçages de cupcake") {
+            message.channel.sendMessage("Voici des glaçages de cupcakes <:051vomiting1:458741160257781790> https://static.cuisineaz.com/610x610/i37589-cupcakes-chocolat-vin-rouge-insert-de-poire-et-glacage-creme-fouettee.png http://www.bestcakes.fr/photo/cupcake/recette/195/recette-cupcake-citron-glacage-bleuet-684.jpg http://cuisinemoiunmouton.com/wp-content/uploads/2014/06/Pist1.jpg");
+        }
+        if ((message.content.startsWith("Bonjour")) || (message.content.startsWith("Salut")) || (message.content.startsWith("Yo")) || (message.content.startsWith("bonjour"))) {
+            message.channel.sendMessage("Hey ! Saluuuuuut " + author + " ! <:051smile1:458741159288766464>");
+        }
+        if (message.content.startsWith("Bonne nuit")) {
+        message.channel.sendMessage("Tu as raison " + author + ", il est temps d'aller dormir <:051sleeping:458741159062405141> Bonne nouit !");
+        }
+        if (message.content.startsWith("Bonsoir")) {
+            var ladate = message.createdAt;
+            var minute = ladate.getMinutes();
+            var heure = ladate.getHours() + 2;
+            if (heure === 24) {var heure = 0}
+            if (heure === 25) {var heure = 1}
+            if (heure < 10) {heure = "0" + heure}
+            if (minute < 10) {minute = "0" + minute};
+            if ((minute < 18) && (minute > 6)) {
+            message.channel.sendMessage("Tu aurais pu dire Bonjour " + author + ", il est seulement " + heure + "h" + minute + " tu sais <:051tongue2:458741158395510784>");
         }
         else {message.channel.sendMessage("Bonswar " + author + " ! <:051smile1:458741159288766464>");}
     
-    }
-    if (message.channel.id === "464399516586475520"){
-        bot.channels.get("464399561985753089").sendMessage(value) //annonce
-            .then(bot.channels.get(consauleDXS).sendMessage("LEVEL UP DANS DEXSIA " + value))};
-    if (message.content.includes("Hello")) {
-    message.channel.sendMessage("Heeeellooo " + author + " ! How are you ? <:051happy1:458741130708779028>");
-    }
-    if (message.content.startsWith("Holà")) {
-    message.channel.sendMessage("Hooolà " + author + " ! Como estas ? <:051happy1:458741130708779028>");
-    }
-    if ((message.content.includes("Ok google")) || (message.content.startsWith("Ok Google"))) {
-        rando2();
-        if (randnum == 1) {
-            message.channel.sendMessage("Wow... Le malaise <:051scared1:458741159808860164>");
+        }
+        if (message.channel.id === "464399516586475520"){
+            bot.channels.get("464399561985753089").sendMessage(value) //annonce
+                .then(bot.channels.get(consauleDXS).sendMessage("LEVEL UP DANS DEXSIA " + value))};
+        if (message.content.includes("Hello")) {
+            message.channel.sendMessage("Heeeellooo " + author + " ! How are you ? <:051happy1:458741130708779028>");
+        }
+        if (message.content.startsWith("Holà")) {
+            message.channel.sendMessage("Hooolà " + author + " ! Como estas ? <:051happy1:458741130708779028>");
+        }
+        if ((message.content.includes("Ok google")) || (message.content.startsWith("Ok Google"))) {
+            rando2();
+            if (randnum == 1) {
+                message.channel.sendMessage("Wow... Le malaise <:051scared1:458741159808860164>");
             }
-        if (randnum == 0) {
-            message.channel.sendMessage("Je crois que vous vous trompez d'assistant " + author);
+            if (randnum == 0) {
+                message.channel.sendMessage("Je crois que vous vous trompez d'assistant " + author);
             }
         
-    }
-    if (message.content.includes("sens de la vie")) {
-        rando2();
-        if (randnum == 1) {
-            message.channel.sendMessage("Alors moi, je pense que le sens universel de la vie est... Une tomate 🍅");
+        }
+        if (message.content.includes("sens de la vie")) {
+            rando2();
+            if (randnum == 1) {
+                message.channel.sendMessage("Alors moi, je pense que le sens universel de la vie est... Une tomate 🍅");
             }
-        if (randnum == 0) {
-            message.channel.sendMessage("Et quel est le sens de ma vie ? <:051dizzy:458741128167161876>");
+            if (randnum == 0) {
+                message.channel.sendMessage("Et quel est le sens de ma vie ? <:051dizzy:458741128167161876>");
             }
-    }
-    if (message.content.includes("is moi un poème")) {
-    message.channel.sendMessage("Les roses sont rouges, les violettes sont bleues. Vous n'avez rien de mieux à faire ?");
-    }
-    if (message.content.includes("ui est ton chef")) {
-    message.channel.sendMessage("La question ne se pose pas, c'est moi même <:051cool1:458741115059830785>");
-    }
-    if ((message.content.includes("on mange")) || (message.content.includes("mange quoi"))) {
-        rando3();
-        if (randnum == 1) {
-            message.channel.sendMessage("Alors moi, ce soir je mange des mangeoirs <:051cool:458741113038176267>");
+        }
+        if (message.content.includes("is moi un poème")) {
+            message.channel.sendMessage("Les roses sont rouges, les violettes sont bleues. Vous n'avez rien de mieux à faire ?");
+        }
+        if (message.content.includes("ui est ton chef")) {
+            message.channel.sendMessage("La question ne se pose pas, c'est moi même <:051cool1:458741115059830785>");
+        }
+        if ((message.content.includes("on mange")) || (message.content.includes("mange quoi"))) {
+            rando3();
+            if (randnum == 1) {
+                message.channel.sendMessage("Alors moi, ce soir je mange des mangeoirs <:051cool:458741113038176267>");
             }
-        if (randnum == 0) {
-            message.channel.sendMessage("Moi ce soir je mange Ecteur ! <:051happy2:458741131627331605>");
+            if (randnum == 0) {
+                message.channel.sendMessage("Moi ce soir je mange Ecteur ! <:051happy2:458741131627331605>");
             }
-        if (randnum == 2) {
-            message.channel.sendMessage("Ce soir c'est pâtes aux sucres pour moa ! <:051happy2:458741131627331605>");
+            if (randnum == 2) {
+                message.channel.sendMessage("Ce soir c'est pâtes aux sucres pour moa ! <:051happy2:458741131627331605>");
             }
-    }
-    if ((message.content.includes("ui est-tu")) || (message.content.includes("u es qui"))) {
-        rando3();
-        if (randnum == 1) {
-            message.channel.sendMessage("Un agent du FBI <:051smirking:458741156092837918>");
+        }
+        if ((message.content.includes("ui est-tu")) || (message.content.includes("u es qui"))) {
+            rando3();
+            if (randnum == 1) {
+                message.channel.sendMessage("Un agent du FBI <:051smirking:458741156092837918>");
             }
-        if (randnum == 0) {
-            message.channel.sendMessage("JE SUIS UNE BANANE FLAMBÉE 🍌 Ainsi que le Saint Graal <:051vomiting1:458741160257781790>");
+            if (randnum == 0) {
+                message.channel.sendMessage("JE SUIS UNE BANANE FLAMBÉE 🍌 Ainsi que le Saint Graal <:051vomiting1:458741160257781790>");
             }
-        if (randnum == 2) {
-            message.channel.sendMessage("Bah je suis le bot DexSia, l'éradicateur de penguins 🐧");
+            if (randnum == 2) {
+                message.channel.sendMessage("Bah je suis le bot DexSia, l'éradicateur de penguins 🐧");
             }
-    }
-    if ((message.content.includes("prout")) || (message.content.includes("Prout"))) {
-        rando3();
-        if (randnum == 1) {
-            message.channel.sendMessage("NAN MAIS BANDE D'ENFANT À DIRE PROUTE");
+        }
+        if ((message.content.includes("prout")) || (message.content.includes("Prout"))) {
+            rando3();
+            if (randnum == 1) {
+                message.channel.sendMessage("NAN MAIS BANDE D'ENFANT À DIRE PROUTE");
             }
-        if (randnum == 0) {
-            message.channel.sendMessage("Ah nan mais ça pu... Vous êtes sérieux ?");
+            if (randnum == 0) {
+                message.channel.sendMessage("Ah nan mais ça pu... Vous êtes sérieux ?");
             }
-        if (randnum == 2) {
-            message.channel.sendMessage("C'est encore Jack c'est ça ?! <:051vomiting:458741158412156929> <:051sick:458741159079051289>");
+            if (randnum == 2) {
+                message.channel.sendMessage("C'est encore Jack c'est ça ?! <:051vomiting:458741158412156929> <:051sick:458741159079051289>");
             }
-    }
-    if (message.content.includes("Père Noël existe")) {
-    message.channel.sendMessage("Le père Noël est réel, comme moi");
-    }
-    if (message.content.includes("DexSia qu'est-ce que tu fais")) {
-    message.channel.sendMessage("Je joue à " + activ + " le plus souvent, mais là je sais pas");
-    }
-    if (message.content.includes("Tu as quel âge")) {
-    message.channel.sendMessage("J'ai {nombre entre 23172912379 et 3820920980298029} ans");
-    }
-    if (message.content.includes("Divise 0 par 0")) {
-    message.channel.sendMessage("Imaginez que vous avez O biscuit et que vous les partagez à part égale entre O ami. Combien de biscuits ont chacun de vos amis? Vous voyez, ce n'est pas logique.");
-    }
-    if (message.content.includes("e suis DexSia")) {
-    message.channel.sendMessage("Ce nom me dis quelque chose... <:051sweat:458741158105841665>");
-    }
-    if (message.content.includes("pouse moi")) {
-    message.channel.sendMessage("Soyons juste amis d'accord ? <:051smile:458741156017078273>");
-    }
-    if (message.content.includes("ai faim")) {
-    message.channel.sendMessage("Va te nourir, je ne suis pas ta mère");
-    }
-    if (message.content.includes("esh alor")) {
-    message.channel.sendMessage("Oh <:051mute:458741153915731993> Je vote pour un ban <:051cool:458741113038176267>");
-    }
-    if ((message.content.includes("Jack")) && (message.content.includes("fou"))) {
-    message.channel.sendMessage("Nan mais monsieur Joker est fou, c'est un fait 🃏 <:051mask:458741159079051285>");
-    }
-    if (message.content.includes("mdr")) {
-    message.channel.sendMessage("Oh que oui c'est rigolo " + author + " <:051tongue1:458741158789513226> <:051vomiting1:458741160257781790> <:051smiling:458741159553138719>");
-    }
-    if ((message.content.includes("top 1")) && (message.content.includes("u as"))) {
-    message.channel.sendMessage("Oui j'ai top 1 aujourd'hui <:dxsTOP1:447325154687844352> <:051smile1:458741159288766464>");
-    }
-    if (message.content.includes("ui va là")) {
-    message.channel.sendMessage("Inspecteur gadget 🕵️<:051cool1:458741115059830785>");
-    }
-    if (message.content.includes("1 2 3")) {
-    message.channel.sendMessage("Viva l'Italia ! 🇮🇹 🇮🇹 🇮🇹 🇮🇹");
-    }
-    if (message.content.includes("lurpy")) {
-    message.channel.sendMessage("Oh mon dieu je coule ! <:051astonished1:458741111884873748><:051cry:458741122169044994>");
-    }
-    if (message.content.includes("Phrase à changer")) {
-    message.channel.sendMessage("La réponse");
-    }
-    
-    if ((message.content.includes("ouce")) && (message.content.includes("bleu"))) {
-        message.react(bot.emojis.get("434400113356701698"))
-    }
-    if (message.content.includes("pomme")) {
-        message.react('🍎');
-        message.react('🍏')
-    }
-    
-    if (message.attachments.size > 0) {
+        }
+        if (message.content.includes("Père Noël existe")) {
+            message.channel.sendMessage("Le père Noël est réel, comme moi");
+        }
+        if (message.content.includes("DexSia qu'est-ce que tu fais")) {
+            message.channel.sendMessage("Je joue à " + activ + " le plus souvent, mais là je sais pas");
+        }
+        if (message.content.includes("Tu as quel âge")) {
+            message.channel.sendMessage("J'ai {nombre entre 23172912379 et 3820920980298029} ans");
+        }
+        if (message.content.includes("Divise 0 par 0")) {
+            message.channel.sendMessage("Imaginez que vous avez O biscuit et que vous les partagez à part égale entre O ami. Combien de biscuits ont chacun de vos amis? Vous voyez, ce n'est pas logique.");
+        }
+        if (message.content.includes("e suis DexSia")) {
+            message.channel.sendMessage("Ce nom me dis quelque chose... <:051sweat:458741158105841665>");
+        }
+        if (message.content.includes("pouse moi")) {
+            message.channel.sendMessage("Soyons juste amis d'accord ? <:051smile:458741156017078273>");
+        }
+        if (message.content.includes("ai faim")) {
+            message.channel.sendMessage("Va te nourir, je ne suis pas ta mère");
+        }
+        if (message.content.includes("esh alor")) {
+        message.channel.sendMessage("Oh <:051mute:458741153915731993> Je vote pour un ban <:051cool:458741113038176267>");
+        }
+        if ((message.content.includes("Jack")) && (message.content.includes("fou"))) {
+            message.channel.sendMessage("Nan mais monsieur Joker est fou, c'est un fait 🃏 <:051mask:458741159079051285>");
+        }
+        if (message.content.includes("mdr")) {
+            message.channel.sendMessage("Oh que oui c'est rigolo " + author + " <:051tongue1:458741158789513226> <:051vomiting1:458741160257781790> <:051smiling:458741159553138719>");
+        }
+        if ((message.content.includes("top 1")) && (message.content.includes("u as"))) {
+            message.channel.sendMessage("Oui j'ai top 1 aujourd'hui <:dxsTOP1:447325154687844352> <:051smile1:458741159288766464>");
+        }
+        if (message.content.includes("ui va là")) {
+            message.channel.sendMessage("Inspecteur gadget 🕵️<:051cool1:458741115059830785>");
+        }
+        if (message.content.includes("1 2 3")) {
+            message.channel.sendMessage("Viva l'Italia ! 🇮🇹 🇮🇹 🇮🇹 🇮🇹");
+        }
+        if (message.content.includes("lurpy")) {
+            message.channel.sendMessage("Oh mon dieu je coule ! <:051astonished1:458741111884873748><:051cry:458741122169044994>");
+        }
+        if (message.content.includes("u veux un kou")) {
+            message.channel.sendMessage("Hein quoi ?! Sérieusement ?! Juste un seul !? <:051cry:458741122169044994><:051sad1:458741156357079070>");
+        }
+        if (message.content.includes("Phrase à changer")) {
+            message.channel.sendMessage("La réponse");
+        }
         
-        message.react('👍')
-        .then(message.react('👎'));        
+        if ((message.content.includes("ouce")) && (message.content.includes("bleu"))) {
+            message.react(bot.emojis.get("434400113356701698"))
+        }
+        if (message.content.includes("pomme")) {
+            message.react('🍎');
+            message.react('🍏')
+       }
     
+       if (message.attachments.size > 0) {
+        
+           message.react('👍')
+            .then(message.react('👎'));        
+    
+        }
     }
     
     
