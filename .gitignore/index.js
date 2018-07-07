@@ -286,7 +286,14 @@ bot.on('message', message => {
         if (message.content.includes("pomme")) {
             message.react('🍎');
             message.react('🍏')
-       }
+        }
+        if ((message.member.id === "289082423960928256") || (message.member.id === "275306941515825163")) {
+            message.react('🌮');
+        }
+        if (message.member.id === "187554016853622784") {
+            message.react('🍰');
+        }
+        
     
        if (message.attachments.size > 0) {
         
