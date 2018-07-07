@@ -213,7 +213,7 @@ bot.on('message', message => {
             message.channel.sendMessage("Ma couleur préférée, c'est un légume ! <:051shocked:458741159133708330>");
         }
         if (message.content.includes("est test")) {
-            message.channel.sendMessage("Je vous reçcois cinq sur cinq <:051cool1:458741115059830785>");
+            message.channel.sendMessage("Je vous reçois cinq sur cinq <:051cool1:458741115059830785>");
         }
         if (message.content.includes("Phrase à changer")) {
             message.channel.sendMessage("La réponse");
