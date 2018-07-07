@@ -239,6 +239,46 @@ bot.on('message', message => {
         if (message.content.includes("Phrase à changer")) {
             message.channel.sendMessage("La réponse");
         }
+        if (message.content.includes("CECI DOIT ÊTRE CHANGÉ")) {
+            rando2();
+            if (randnum == 1) {
+                message.channel.sendMessage("LE BOT REPOND ICI");
+            }
+            if (randnum == 0) {
+                message.channel.sendMessage("LE BOT REPOND ÇA UNE FOIS SUR DEUX";
+            }
+        
+        }
+        if (message.content.includes("CECI DOIT ÊTRE CHANGÉ")) {
+            rando2();
+            if (randnum == 1) {
+                message.channel.sendMessage("LE BOT REPOND ICI");
+            }
+            if (randnum == 0) {
+                message.channel.sendMessage("LE BOT REPOND ÇA UNE FOIS SUR DEUX";
+            }
+        
+        }
+        if (message.content.includes("CECI DOIT ÊTRE CHANGÉ")) {
+            rando2();
+            if (randnum == 1) {
+                message.channel.sendMessage("LE BOT REPOND ICI");
+            }
+            if (randnum == 0) {
+                message.channel.sendMessage("LE BOT REPOND ÇA UNE FOIS SUR DEUX";
+            }
+        
+        }
+        if (message.content.includes("CECI DOIT ÊTRE CHANGÉ")) {
+            rando2();
+            if (randnum == 1) {
+                message.channel.sendMessage("LE BOT REPOND ICI");
+            }
+            if (randnum == 0) {
+                message.channel.sendMessage("LE BOT REPOND ÇA UNE FOIS SUR DEUX";
+            }
+        
+        }
         
         if ((message.content.includes("ouce")) && (message.content.includes("bleu"))) {
             message.react(bot.emojis.get("434400113356701698"))
