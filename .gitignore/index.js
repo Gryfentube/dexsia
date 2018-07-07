@@ -301,7 +301,7 @@ bot.on('message', message => {
             message.react(bot.emojis.get("465180425225240578"));
         }
         if (message.member.id === "239310906981482496") { // JACK
-            message.react(bot.emojis.get("458741128167161876"));
+            message.react(bot.emojis.get("465216567341481994"));
             message.react(bot.emojis.get("465206990424113152"))
         }
         if (message.member.id === "426496080272818186") { //Marie
