@@ -302,6 +302,9 @@ bot.on('message', message => {
         if (message.member.id === "426496080272818186") { //Marie
             message.react('🖖🏾');
         }
+        if (message.member.id === "313117398171648000") { //Wena
+            message.react('😻');
+        }
         
     
        if (message.attachments.size > 0) {
