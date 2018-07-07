@@ -293,6 +293,15 @@ bot.on('message', message => {
         if (message.member.id === "187554016853622784") {
             message.react('🍰');
         }
+        if (message.member.id === "337269254208618507") { // ECTEUR
+            message.react(bot.emojis.get("465177946349502465"))
+        }
+        if (message.member.id === "239310906981482496") { // JACK
+            message.react(bot.emojis.get("458741128167161876"))
+        }
+        if (message.member.id === "426496080272818186") { //Marie
+            message.react('🖖🏾');
+        }
         
     
        if (message.attachments.size > 0) {
