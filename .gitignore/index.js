@@ -211,6 +211,33 @@ bot.on('message', message => {
         if (message.content.includes("Phrase à changer")) {
             message.channel.sendMessage("La réponse");
         }
+        if (message.content.includes("Phrase à changer")) {
+            message.channel.sendMessage("La réponse");
+        }
+        if (message.content.includes("Phrase à changer")) {
+            message.channel.sendMessage("La réponse");
+        }
+        if (message.content.includes("Phrase à changer")) {
+            message.channel.sendMessage("La réponse");
+        }
+        if (message.content.includes("Phrase à changer")) {
+            message.channel.sendMessage("La réponse");
+        }
+        if (message.content.includes("Phrase à changer")) {
+            message.channel.sendMessage("La réponse");
+        }
+        if (message.content.includes("Phrase à changer")) {
+            message.channel.sendMessage("La réponse");
+        }
+        if (message.content.includes("Phrase à changer")) {
+            message.channel.sendMessage("La réponse");
+        }
+        if (message.content.includes("Phrase à changer")) {
+            message.channel.sendMessage("La réponse");
+        }
+        if (message.content.includes("Phrase à changer")) {
+            message.channel.sendMessage("La réponse");
+        }
         
         if ((message.content.includes("ouce")) && (message.content.includes("bleu"))) {
             message.react(bot.emojis.get("434400113356701698"))
