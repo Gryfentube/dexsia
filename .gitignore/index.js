@@ -311,7 +311,7 @@ bot.on('message', message => {
             message.react('🌭');
             message.react(bot.emojis.get("465182733740670986"))
         }
-        if (message.member.id === "239310906981482496") { // RIVA
+        if (message.member.id === "223061384320122880") { // RIVA
             message.react(bot.emojis.get("447325154687844352"))
         }
         if (message.member.id === "408313237134901249") { // MICHI
