@@ -309,7 +309,21 @@ bot.on('message', message => {
         }
         if (message.member.id === "266729241549340672") { //Rock
             message.react('🌭');
+            message.react(bot.emojis.get("465182733740670986"))
         }
+        if (message.member.id === "239310906981482496") { // RIVA
+            message.react(bot.emojis.get("447325154687844352"))
+        }
+        if (message.member.id === "408313237134901249") { // MICHI
+            message.react(bot.emojis.get("465182193895997441"))
+        }
+        if (message.member.id === "350022867980910595") { //MIYKI
+            message.react('🍪');
+        }
+        if (message.member.id === "415547757777125392") { // LIKA
+            message.react(bot.emojis.get("465182733036158978"))
+        }
+        
         
     
        if (message.attachments.size > 0) {
