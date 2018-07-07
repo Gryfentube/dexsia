@@ -287,6 +287,9 @@ bot.on('message', message => {
             message.react('🍎');
             message.react('🍏')
         }
+        if (message.content.includes(":dxsthanos:")) {
+            message.react(bot.emojis.get("455498602375020555"));
+        }
         if ((message.member.id === "289082423960928256") || (message.member.id === "275306941515825163")) {
             message.react('🌮');
         }
@@ -296,7 +299,6 @@ bot.on('message', message => {
         if (message.member.id === "337269254208618507") { // ECTEUR
             message.react(bot.emojis.get("465177946349502465"));
             message.react(bot.emojis.get("465180425225240578"));
-            
         }
         if (message.member.id === "239310906981482496") { // JACK
             message.react(bot.emojis.get("458741128167161876"))
