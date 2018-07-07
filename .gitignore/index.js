@@ -180,7 +180,7 @@ bot.on('message', message => {
             message.channel.sendMessage("Ce nom me dis quelque chose... <:051sweat:458741158105841665>");
         }
         if (message.content.includes("pouse moi")) {
-            message.channel.sendMessage("Soyons juste amis d'accord ? <:051smile:458741156017078273>");
+            message.channel.sendMessage("Soyons juste amis d'accord ? <:hehe:465225404307996674>");
         }
         if (message.content.includes("ai faim")) {
             message.channel.sendMessage("Va te nourir, je ne suis pas ta mère");
@@ -212,8 +212,8 @@ bot.on('message', message => {
         if ((message.content.includes("uleur préfér")) && (message.content.includes("quoi"))) {
             message.channel.sendMessage("Ma couleur préférée, c'est un légume ! <:051shocked:458741159133708330>");
         }
-        if (message.content.includes("Phrase à changer")) {
-            message.channel.sendMessage("La réponse");
+        if (message.content.includes("est test")) {
+            message.channel.sendMessage("Je vous reçcois cinq sur cinq <:051cool1:458741115059830785>");
         }
         if (message.content.includes("Phrase à changer")) {
             message.channel.sendMessage("La réponse");
