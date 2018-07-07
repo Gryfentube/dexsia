@@ -209,7 +209,7 @@ bot.on('message', message => {
         if (message.content.includes("u veux un kou")) {
             message.channel.sendMessage("Hein quoi ?! Sérieusement ?! Juste un seul !? <:051cry:458741122169044994><:051sad1:458741156357079070>");
         }
-        if ((message.content.includes("uleur préfér")) || (message.content.includes("quoi"))) {
+        if ((message.content.includes("uleur préfér")) && (message.content.includes("quoi"))) {
             message.channel.sendMessage("Ma couleur préférée, c'est un légume ! <:051shocked:458741159133708330>");
         }
         if (message.content.includes("Phrase à changer")) {
