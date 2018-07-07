@@ -212,7 +212,7 @@ bot.on('message', message => {
         if ((message.content.includes("uleur préfér")) && (message.content.includes("quoi"))) {
             message.channel.sendMessage("Ma couleur préférée, c'est un légume ! <:051shocked:458741159133708330>");
         }
-        if (message.content.includes("ouston vous me recevez ?")) {
+        if (message.content.includes("ouston vous me recevez")) {
             message.channel.sendMessage("Je vous reçois cinq sur cinq <:051cool1:458741115059830785>");
         }
         if (message.content.includes("Phrase à changer")) {
