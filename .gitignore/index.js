@@ -239,13 +239,13 @@ bot.on('message', message => {
         if (message.content.includes("Phrase à changer")) {
             message.channel.sendMessage("La réponse");
         }
-        if (message.content.includes("a meilleure arme")) {
+        if (message.content.includes("CECI DOIT ÊTRE CHANGÉ")) {
             rando2();
             if (randnum == 1) {
-                message.channel.sendMessage("Eh le bizon c'est vraiment la meilleure arme du jeu <:051cool:458741113038176267>");
+                message.channel.sendMessage("LE BOT REPOND ICI");
             }
             if (randnum == 0) {
-                message.channel.sendMessage("Eh l'Ak c'est vraiment la meilleure arme du jeu <:051cool:458741113038176267>");
+                message.channel.sendMessage("LE BOT REPOND ÇA UNE FOIS SUR DEUX");
             }
         
         }
