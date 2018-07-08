@@ -215,8 +215,8 @@ bot.on('message', message => {
         if (message.content.includes("est 1 2")) {
             message.channel.sendMessage("Je vous reçois cinq sur cinq <:051cool1:458741115059830785>");
         }
-        if (message.content.includes("Phrase à changer")) {
-            message.channel.sendMessage("La réponse");
+        if (message.content.includes("atan")) {
+            message.channel.sendMessage("Bouche Un Coin <:dizzzy:465216567341481994>");
         }
         if (message.content.includes("Phrase à changer")) {
             message.channel.sendMessage("La réponse");
