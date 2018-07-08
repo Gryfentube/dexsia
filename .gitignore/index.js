@@ -155,7 +155,7 @@ bot.on('message', message => {
         if ((message.content.includes("prout")) || (message.content.includes("Prout"))) {
             rando3();
             if (randnum == 1) {
-                message.channel.sendMessage("NAN MAIS BANDE D'ENFANT À DIRE PROUTE");
+                message.channel.sendMessage("NAN MAIS BANDE D'ENFANT À DIRE PROUTEUH");
             }
             if (randnum == 0) {
                 message.channel.sendMessage("Ah nan mais ça pu... Vous êtes sérieux ?");
