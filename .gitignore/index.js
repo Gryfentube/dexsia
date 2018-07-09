@@ -218,8 +218,8 @@ bot.on('message', message => {
         if (message.content.includes("atan")) {
             message.channel.sendMessage("Bouche Un Coin <:dizzzy:465216567341481994>");
         }
-        if (message.content.includes("réponse")) {
-            message.channel.sendMessage("réponse");
+        if (message.content.includes("taco")) {
+            message.channel.sendMessage("🇹🅰️🇨🅾️🇸");
         }
         if (message.content.includes("Phrase à changer")) {
             message.channel.sendMessage("La réponse");
@@ -287,10 +287,7 @@ bot.on('message', message => {
             message.react('🍎');
             message.react('🍏')
         }
-        if (message.content.includes("pomme")) {
-            message.react('󠁔');
 
-        }
         if (message.content.includes(":dxsthanos:")) {
             message.react(bot.emojis.get("455498602375020555"));
         }
