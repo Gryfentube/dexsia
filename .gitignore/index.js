@@ -218,8 +218,8 @@ bot.on('message', message => {
         if (message.content.includes("atan")) {
             message.channel.sendMessage("Bouche Un Coin <:dizzzy:465216567341481994>");
         }
-        if (message.content.includes("Phrase à changer")) {
-            message.channel.sendMessage("La réponse");
+        if (message.content.includes("réponse")) {
+            message.channel.sendMessage("réponse");
         }
         if (message.content.includes("Phrase à changer")) {
             message.channel.sendMessage("La réponse");
