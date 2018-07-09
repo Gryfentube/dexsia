@@ -297,7 +297,7 @@ bot.on('message', message => {
         if (message.member.id === "187554016853622784") {
             message.react('🍰');
         }
-        if (message.member.id === "337269254208618507") { // ECTEUR
+        if (message.member.id === "337269254208618507") { //ECTEUR
             message.react(bot.emojis.get("465177946349502465"));
             message.react(bot.emojis.get("465180425225240578"));
         }
