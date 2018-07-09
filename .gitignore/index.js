@@ -287,6 +287,10 @@ bot.on('message', message => {
             message.react('🍎');
             message.react('🍏')
         }
+        if (message.content.includes("pomme")) {
+            message.react('󠁔');
+
+        }
         if (message.content.includes(":dxsthanos:")) {
             message.react(bot.emojis.get("455498602375020555"));
         }
