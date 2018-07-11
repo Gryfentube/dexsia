@@ -359,4 +359,4 @@ bot.on("guildMemberRemove", member => { //Quand un membre quitte dans le serveur
     var aurevoirDXS = member.guild.channels.find("name", "aurevoir"); //variable pour le salon aurevoir
     aurevoirDXS.sendMessage('**' + member.displayName + '** est partie. Rest in pepperoni...') //envoie le message de aurevoir
     bot.channels.get(consauleDXS).sendMessage(member.user + " a quitté la DexSia, le message s'est bien affiché")  //console
-});
+})
