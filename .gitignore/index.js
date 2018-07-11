@@ -302,6 +302,7 @@ bot.on('message', message => {
             message.react('🌮');
         }
         if (message.member.id === "187554016853622784") {
+            console.log("message de GRYF");
             message.react('🍰');
         }
         if (message.member.id === "337269254208618507") { // Ecteur
