@@ -292,7 +292,7 @@ bot.on('message', message => {
             }
         
         }
-        
+        // REACT
         if ((message.content.includes("ouce")) && (message.content.includes("bleu"))) {
             message.react(bot.emojis.get("434400113356701698"))
         }
@@ -335,12 +335,14 @@ bot.on('message', message => {
             message.react(bot.emojis.get("465182193895997441"))
         }
         if (message.member.id === "350022867980910595") { //MIYKI
-            message.react('🍪');
+            message.react(bot.emojis.get("462211080765177856"))
         }
         if (message.member.id === "415547757777125392") { // LIKA
             message.react(bot.emojis.get("465182733036158978"))
         }
-        
+        if (message.member.id === "") { // EMPTY
+            message.react("🐶")
+        }
         
     
        if (message.attachments.size > 0) {
@@ -349,6 +351,7 @@ bot.on('message', message => {
             .then(message.react('👎'));        
     
         }
+        //fin de la zone REACT
     }}
     
     
