@@ -305,7 +305,7 @@ bot.on('message', message => {
         }
         if (message.member.id === "337269254208618507") { // Ecteur
             message.react(bot.emojis.get("465177946349502465")); //so funny
-            message.react(bot.emojis.get("465180425225240578")); // blblbl
+            message.react(bot.emojis.get("465180425225240578")) // blblbl
         }
         if (message.member.id === "239310906981482496") { // Jack
             message.react(bot.emojis.get("466031285089992714")); //dizzy
@@ -333,9 +333,6 @@ bot.on('message', message => {
         if (message.member.id === "415547757777125392") { // LIKA
             message.react(bot.emojis.get("465182733036158978")) //truc mignon là
         }
-        if (message.member.id === "") { // EMPTY
-            message.react("🐶")
-        }
         
     
        if (message.attachments.size > 0) {
@@ -344,7 +341,8 @@ bot.on('message', message => {
             .then(message.react(bot.emojis.get("436628772238917632")));  //pouce rouge      
         }
         //fin de la zone REACT
-    }}
+    }
+    }
     
     
     
