@@ -6,7 +6,7 @@ const adapter = new FileSync('database.json');
 const db = low(adapter);
     db.defaults({ ann:[]})
         .write()
-bot.login("");
+bot.login(process.env.TOKEN);
 
 //salons DexSia Introduce YourSelf
     const annDXSIY = "452800422655033365"; //salon annonce DexSia Introduce Yourself
@@ -97,6 +97,7 @@ bot.on('message', message => {
             else {
                 message.channel.sendMessage("Bonsoir " + author + " ! <:051smile1:458741159288766464>");
             }
+        }
         if (message.channel.id === "464399516586475520"){
             bot.channels.get("464399561985753089").sendMessage(value) //annonce
                 .then(bot.channels.get(consauleDXS).sendMessage("LEVEL UP DANS DEXSIA " + value))};
@@ -345,10 +346,8 @@ bot.on('message', message => {
         //fin de la zone REACT
     }
     }
-    
-    
-    
-};
+});
+
 bot.on("guildMemberAdd", member => { //Quand un membre entre dans le serveur
     var welcomeDXS = member.guild.channels.find("name", "welcome"); //variable pour le salon welcome
     welcomeDXS.sendMessage('Passe un bon moment dans la **DexSia** ' + member.user + ' 😉') //envoie le message de bienvenue
@@ -359,4 +358,4 @@ bot.on("guildMemberRemove", member => { //Quand un membre quitte dans le serveur
     var aurevoirDXS = member.guild.channels.find("name", "aurevoir"); //variable pour le salon aurevoir
     aurevoirDXS.sendMessage('**' + member.displayName + '** est partie. Rest in pepperoni...') //envoie le message de aurevoir
     bot.channels.get(consauleDXS).sendMessage(member.user + " a quitté la DexSia, le message s'est bien affiché")  //console
-})})
+})
