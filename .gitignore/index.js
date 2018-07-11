@@ -42,7 +42,7 @@ function attachIsImage(msgAttach) {
 
 
 var prefix = ("_"); //définir le prefix du bot
-var activ = ("éradiquer les penguins"); //modifier la valeur entre guillemets pour changer son état au démarage
+var activ = ("éradiquer un penguin"); //modifier la valeur entre guillemets pour changer son état au démarage
 var values = ("empty"); //empecher les soucis de values
 
 //event on démarrage
