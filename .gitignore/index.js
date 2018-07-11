@@ -6,7 +6,7 @@ const adapter = new FileSync('database.json');
 const db = low(adapter);
     db.defaults({ ann:[]})
         .write()
-bot.login(process.env.TOKEN);
+bot.login("NDU0MjMzMjM5Nzc1ODcwOTg1.Did_1Q.rtNp_IigAQBSuitUdtXGossYn4o");
 
 //salons DexSia Introduce YourSelf
     const annDXSIY = "452800422655033365"; //salon annonce DexSia Introduce Yourself
@@ -94,7 +94,8 @@ bot.on('message', message => {
             if ((minute < 18) && (minute > 6)) {
             message.channel.sendMessage("Tu aurais pu dire Bonjour " + author + ", il est seulement " + heure + "h" + minute + " tu sais <:051tongue2:458741158395510784>");
             }
-            else {message.channel.sendMessage("Bonsoir " + author + " ! <:051smile1:458741159288766464>");
+            else {
+                message.channel.sendMessage("Bonsoir " + author + " ! <:051smile1:458741159288766464>");
             }
         if (message.channel.id === "464399516586475520"){
             bot.channels.get("464399561985753089").sendMessage(value) //annonce
@@ -357,4 +358,4 @@ bot.on("guildMemberRemove", member => { //Quand un membre quitte dans le serveur
     var aurevoirDXS = member.guild.channels.find("name", "aurevoir"); //variable pour le salon aurevoir
     aurevoirDXS.sendMessage('**' + member.displayName + '** est partie. Rest in pepperoni...') //envoie le message de aurevoir
     bot.channels.get(consauleDXS).sendMessage(member.user + " a quitté la DexSia, le message s'est bien affiché")  //console
-})
+})})
