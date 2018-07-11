@@ -71,6 +71,9 @@ bot.on('message', message => {
         if (message.content === "taco") {
             message.channel.sendMessage("<:TACO11:449684235838554114><:TACO12:449684236119572483><:TACO13:449684236266504192><:TACO14:449684236333744128>\n<:TACO21:449684236715294730><:TACO22:449684236723814411><:TACO23:449684237721796608><:TACO24:449684236899713025>\n<:TACO31:449684237508018176><:TACO32:449684237650493450><:TACO33:449684237726253056><:TACO34:449684237940031488>");
         }
+        if (message.content.includes("taco")) {
+            message.channel.sendMessage("🇹🅰️🇨🅾️🇸");
+        }
         if (message.content === "Montre moi des glaçages de cupcake") {
             message.channel.sendMessage("Voici des glaçages de cupcakes <:051vomiting1:458741160257781790> https://static.cuisineaz.com/610x610/i37589-cupcakes-chocolat-vin-rouge-insert-de-poire-et-glacage-creme-fouettee.png http://www.bestcakes.fr/photo/cupcake/recette/195/recette-cupcake-citron-glacage-bleuet-684.jpg http://cuisinemoiunmouton.com/wp-content/uploads/2014/06/Pist1.jpg");
         }
@@ -91,9 +94,8 @@ bot.on('message', message => {
             if ((minute < 18) && (minute > 6)) {
             message.channel.sendMessage("Tu aurais pu dire Bonjour " + author + ", il est seulement " + heure + "h" + minute + " tu sais <:051tongue2:458741158395510784>");
             }
-            else {message.channel.sendMessage("Bonsoir " + author + " ! <:051smile1:458741159288766464>");}
-    
-        }
+            else {message.channel.sendMessage("Bonsoir " + author + " ! <:051smile1:458741159288766464>");
+            }
         if (message.channel.id === "464399516586475520"){
             bot.channels.get("464399561985753089").sendMessage(value) //annonce
                 .then(bot.channels.get(consauleDXS).sendMessage("LEVEL UP DANS DEXSIA " + value))};
@@ -111,7 +113,6 @@ bot.on('message', message => {
             if (randnum == 0) {
                 message.channel.sendMessage("Je crois que vous vous trompez d'assistant " + author);
             }
-        
         }
         if (message.content.includes("sens de la vie")) {
             rando2();
@@ -231,9 +232,6 @@ bot.on('message', message => {
         if (message.content.includes("atan")) {
             message.channel.sendMessage("Bouche Un Coin <:dizzzy:465216567341481994>");
         }
-        if (message.content.includes("taco")) {
-            message.channel.sendMessage("🇹🅰️🇨🅾️🇸");
-        }
         if (message.content.includes("Phrase à changer")) {
             message.channel.sendMessage("La réponse");
         }
@@ -260,7 +258,6 @@ bot.on('message', message => {
             if (randnum == 0) {
                 message.channel.sendMessage("LE BOT REPOND ÇA UNE FOIS SUR DEUX");
             }
-        
         }
         if (message.content.includes("CECI DOIT ÊTRE CHANGÉ")) {
             rando2();
@@ -270,7 +267,6 @@ bot.on('message', message => {
             if (randnum == 0) {
                 message.channel.sendMessage("LE BOT REPOND ÇA UNE FOIS SUR DEUX");
             }
-        
         }
         if (message.content.includes("CECI DOIT ÊTRE CHANGÉ")) {
             rando2();
@@ -280,7 +276,6 @@ bot.on('message', message => {
             if (randnum == 0) {
                 message.channel.sendMessage("LE BOT REPOND ÇA UNE FOIS SUR DEUX");
             }
-        
         }
         if (message.content.includes("CECI DOIT ÊTRE CHANGÉE")) {
             rando2();
@@ -290,7 +285,6 @@ bot.on('message', message => {
             if (randnum == 0) {
                 message.channel.sendMessage("LE BOT REPOND ÇA UNE FOIS SUR DEUX");
             }
-        
         }
         // REACT
         if ((message.content.includes("ouce")) && (message.content.includes("bleu"))) {
@@ -300,23 +294,22 @@ bot.on('message', message => {
             message.react('🍎');
             message.react('🍏')
         }
-
         if (message.content.includes(":dxsthanos:")) {
             message.react(bot.emojis.get("455498602375020555"));
         }
-        if ((message.member.id === "289082423960928256") || (message.member.id === "275306941515825163")) {
+        if ((message.member.id === "289082423960928256") || (message.member.id === "275306941515825163")) { //Suky || Ragna
             message.react('🌮');
         }
         if (message.member.id === "187554016853622784") {
             message.react('🍰');
         }
-        if (message.member.id === "337269254208618507") { //ECTEUR
-            message.react(bot.emojis.get("465177946349502465"));
-            message.react(bot.emojis.get("465180425225240578"));
+        if (message.member.id === "337269254208618507") { // Ecteur
+            message.react(bot.emojis.get("465177946349502465")); //so funny
+            message.react(bot.emojis.get("465180425225240578")); // blblbl
         }
-        if (message.member.id === "239310906981482496") { // JACK
-            message.react(bot.emojis.get("466031285089992714"));
-            message.react(bot.emojis.get("465206990424113152"))
+        if (message.member.id === "239310906981482496") { // Jack
+            message.react(bot.emojis.get("466031285089992714")); //dizzy
+            message.react(bot.emojis.get("465206990424113152")) //Jack Daniel
         }
         if (message.member.id === "426496080272818186") { //Marie
             message.react('🖖🏾');
@@ -326,19 +319,19 @@ bot.on('message', message => {
         }
         if (message.member.id === "266729241549340672") { //Rock
             message.react('🌭');
-            message.react(bot.emojis.get("465182733740670986"))
+            message.react(bot.emojis.get("465182733740670986")) // PICKLE RICK
         }
         if (message.member.id === "223061384320122880") { // RIVA
-            message.react(bot.emojis.get("447325154687844352"))
+            message.react(bot.emojis.get("447325154687844352")) //TOP 1
         }
         if (message.member.id === "408313237134901249") { // MICHI
-            message.react(bot.emojis.get("465182193895997441"))
+            message.react(bot.emojis.get("465182193895997441")) // OOF
         }
         if (message.member.id === "350022867980910595") { //MIYKI
-            message.react(bot.emojis.get("462211080765177856"))
+            message.react(bot.emojis.get("462211080765177856")) //kuki
         }
         if (message.member.id === "415547757777125392") { // LIKA
-            message.react(bot.emojis.get("465182733036158978"))
+            message.react(bot.emojis.get("465182733036158978")) //truc mignon là
         }
         if (message.member.id === "") { // EMPTY
             message.react("🐶")
@@ -347,9 +340,8 @@ bot.on('message', message => {
     
        if (message.attachments.size > 0) {
         
-           message.react('👍')
-            .then(message.react('👎'));        
-    
+           message.react(bot.emojis.get("434400113356701698")) // pouce bleu
+            .then(message.react(bot.emojis.get("436628772238917632")));  //pouce rouge      
         }
         //fin de la zone REACT
     }}
