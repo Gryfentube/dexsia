@@ -6,7 +6,7 @@ const adapter = new FileSync('database.json');
 const db = low(adapter);
     db.defaults({ ann:[]})
         .write()
-bot.login("NDU0MjMzMjM5Nzc1ODcwOTg1.Did_1Q.rtNp_IigAQBSuitUdtXGossYn4o");
+bot.login("");
 
 //salons DexSia Introduce YourSelf
     const annDXSIY = "452800422655033365"; //salon annonce DexSia Introduce Yourself
