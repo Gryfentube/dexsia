@@ -291,7 +291,7 @@ bot.on('message', message => {
         
         if (message.content.startsWith("Traduit")) {
             if (message.content.includes("pqfui")) {
-            message.channel.sendMessage("Pqfui veut dire Je t'aime en Peepo");
+            message.channel.sendMessage("Pqfui veut dire *Je t'aime* en __Peepo__");
             }
         }
         
