@@ -291,13 +291,16 @@ bot.on('message', message => {
         //traduction
         if (message.content.startsWith("Traduit")) {
             if (message.content.includes("pqfui")) {
-            message.channel.sendMessage("Pqfui veut dire *Je t'aime* en __Peepo__");
+                message.channel.sendMessage("Pqfui veut dire *Je t'aime* en __Peepo__");
             }
             if (message.content.includes("ouiqgh")) {
-            message.channel.sendMessage("Ouiqgh veut dire *Viens voc* en __Peepo__");
+                message.channel.sendMessage("Ouiqgh veut dire *Viens voc* en __Peepo__");
             }
             if (message.content.includes("zegfzeth")) {
-            message.channel.sendMessage("Zegfzeth veut dire *humble, intentionné, gentil* en __Peepo__");
+                message.channel.sendMessage("Zegfzeth veut dire *humble, intentionné, gentil* en __Peepo__");
+            }
+            else {
+                message.channel.sendMessage("Tu veux que je traduise quoi ? J'ai pas compris");
             }
         }
         
