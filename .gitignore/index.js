@@ -299,7 +299,7 @@ bot.on('message', message => {
             if (message.content.includes("zegfzeth")) {
                 message.channel.sendMessage("Zegfzeth veut dire *humble, intentionné, gentil* en __Peepo__");
             }
-            else {
+            if (message.content === "Traduit") {
                 message.channel.sendMessage("Tu veux que je traduise quoi ? J'ai pas compris");
             }
         }
