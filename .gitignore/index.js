@@ -288,6 +288,13 @@ bot.on('message', message => {
                 message.channel.sendMessage("LE BOT REPOND ÇA UNE FOIS SUR DEUX");
             }
         }
+        
+        if (message.content.startsWith("Traduit")) {
+            if (message.content.includes("pqfui")) {
+            message.channel.sendMessage("Pqfui veut dire Je t'aime en Peepo");
+            }
+        }
+        
         // REACT
         if ((message.content.includes("ouce")) && (message.content.includes("bleu"))) {
             message.react(bot.emojis.get("434400113356701698"))
