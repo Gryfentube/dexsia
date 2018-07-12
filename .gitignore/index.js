@@ -232,7 +232,7 @@ bot.on('message', message => {
             message.channel.sendMessage("Je vous reçois cinq sur cinq <:051cool1:458741115059830785>");
         }
         if (message.content.includes("atan")) {
-            message.channel.sendMessage("Bouche Un Coin <:051devil:458741126552223755>");
+            message.channel.sendMessage("Bouche Un Coin <:dizzzy:465216567341481994>");
         }
         if (message.content.includes("Phrase à changer")) {
             message.channel.sendMessage("La réponse");
