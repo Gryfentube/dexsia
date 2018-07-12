@@ -288,10 +288,16 @@ bot.on('message', message => {
                 message.channel.sendMessage("LE BOT REPOND ÇA UNE FOIS SUR DEUX");
             }
         }
-        
+        //traduction
         if (message.content.startsWith("Traduit")) {
             if (message.content.includes("pqfui")) {
             message.channel.sendMessage("Pqfui veut dire *Je t'aime* en __Peepo__");
+            }
+            if (message.content.includes("ouiqgh")) {
+            message.channel.sendMessage("Ouiqgh veut dire *Viens voc* en __Peepo__");
+            }
+            if (message.content.includes("zegfzeth")) {
+            message.channel.sendMessage("Zegfzeth veut dire *humble, intentionné, gentil* en __Peepo__");
             }
         }
         
