@@ -78,13 +78,13 @@ bot.on('message', message => {
         if (message.content === "Montre moi des glaçages de cupcake") {
             message.channel.sendMessage("Voici des glaçages de cupcakes <:051vomiting1:458741160257781790> https://static.cuisineaz.com/610x610/i37589-cupcakes-chocolat-vin-rouge-insert-de-poire-et-glacage-creme-fouettee.png http://www.bestcakes.fr/photo/cupcake/recette/195/recette-cupcake-citron-glacage-bleuet-684.jpg http://cuisinemoiunmouton.com/wp-content/uploads/2014/06/Pist1.jpg");
         }
-        if ((messlow.includes("onjour")) || (messlow.includes("alut")) || (messlow.includes("Yo")) || (messlow.includes("Hey"))) {
+        if ((messlow.includes("bonjour")) || (messlow.includes("salut")) || (messlow.includes("yo")) || (messlow.includes("hey"))) {
             message.channel.sendMessage("Hey ! Salut " + author + " ! <:051smile1:458741159288766464>");
         }
-        if (message.content.startsWith("Bonne nuit")) {
+        if (message.content.startsWith("bonne nuit")) {
         message.channel.sendMessage("Tu as raison " + author + ", il est temps d'aller dormir <:051sleeping:458741159062405141> Bonne nuit !");
         }
-        if (message.content.startsWith("Bonsoir")) {
+        if (message.content.startsWith("bonsoir")) {
             var ladate = message.createdAt;
             var minute = ladate.getMinutes();
             var heure = ladate.getHours() + 2;
@@ -102,13 +102,13 @@ bot.on('message', message => {
         if (message.channel.id === "464399516586475520"){
             bot.channels.get("464399561985753089").sendMessage(value) //annonce
                 .then(bot.channels.get(consauleDXS).sendMessage("LEVEL UP DANS DEXSIA " + value))};
-        if (messlow.includes("Hello")) {
+        if (messlow.includes("hello")) {
             message.channel.sendMessage("Heeeellooo " + author + " ! How are you ? <:051happy1:458741130708779028>");
         }
         if (message.content.startsWith("Holà")) {
             message.channel.sendMessage("Hooolà " + author + " ! Como estas ? <:051happy1:458741130708779028>");
         }
-        if ((messlow.includes("Ok google")) || (message.content.startsWith("Ok Google"))) {
+        if (messlow.includes("ok google")) {
             rando2();
             if (randnum == 1) {
                 message.channel.sendMessage("Wow... Le malaise <:051scared1:458741159808860164>");
@@ -126,10 +126,10 @@ bot.on('message', message => {
                 message.channel.sendMessage("Et quel est le sens de ma vie ? <:051dizzy:458741128167161876>");
             }
         }
-        if (messlow.includes("is moi un poème")) {
+        if (messlow.includes("dis moi un poème")) {
             message.channel.sendMessage("Les roses sont rouges, les violettes sont bleues. Vous n'avez rien de mieux à faire ?");
         }
-        if (messlow.includes("ui est ton chef")) {
+        if (messlow.includes("qui est ton chef")) {
             message.channel.sendMessage("La question ne se pose pas, c'est moi même <:051cool1:458741115059830785>");
         }
         if ((messlow.includes("on mange")) || (messlow.includes("mange quoi"))) {
@@ -144,7 +144,7 @@ bot.on('message', message => {
                 message.channel.sendMessage("Ce soir c'est pâtes aux sucres pour moa ! <:051happy2:458741131627331605>");
             }
         }
-        if ((messlow.includes("ui est-tu")) || (messlow.includes("u es qui"))) {
+        if ((messlow.includes("qui est-tu")) || (messlow.includes("tu es qui"))) {
             rando3();
             if (randnum == 1) {
                 message.channel.sendMessage("Un agent du FBI <:051smirking:458741156092837918>");
@@ -156,7 +156,7 @@ bot.on('message', message => {
                 message.channel.sendMessage("Bah je suis le bot DexSia, l'éradicateur de penguins 🐧");
             }
         }
-        if ((messlow.includes("prout")) || (messlow.includes("Prout"))) {
+        if (messlow.includes("prout")) {
             rando3();
             if (author === "463296964038230019") {
                 if (randnum == 1) {
@@ -181,79 +181,79 @@ bot.on('message', message => {
                 }
             }
         }
-        if (messlow.includes("Père Noël existe")) {
+        if (messlow.includes("père noël existe")) {
             message.channel.sendMessage("Le père Noël est réel, comme moi");
         }
-        if (messlow.includes("DexSia qu'est-ce que tu fais")) {
+        if (messlow.includes("dexSia qu'est-ce que tu fais")) {
             message.channel.sendMessage("Je joue à " + activ + " le plus souvent, mais là je sais pas");
         }
-        if (messlow.includes("Tu as quel âge")) {
+        if (messlow.includes("tu as quel âge")) {
             message.channel.sendMessage("J'ai {nombre entre 23172912379 et 3820920980298029} ans");
         }
-        if (messlow.includes("Divise 0 par 0")) {
+        if (messlow.includes("divise 0 par 0")) {
             message.channel.sendMessage("Imaginez que vous avez O biscuit et que vous les partagez à part égale entre O ami. Combien de biscuits ont chacun de vos amis? Vous voyez, ce n'est pas logique.");
         }
-        if (messlow.includes("e suis DexSia")) {
+        if (messlow.includes("je suis dexsia")) {
             message.channel.sendMessage("Ce nom me dis quelque chose... <:051sweat:458741158105841665>");
         }
         if (messlow.includes("pouse moi")) {
             message.channel.sendMessage("Soyons juste amis d'accord ? <:hehe:465225404307996674>");
         }
-        if (messlow.includes("ai faim")) {
+        if (messlow.includes("j'ai faim")) {
             message.channel.sendMessage("Va te nourir, je ne suis pas ta mère");
         }
-        if (messlow.includes("esh alor")) {
+        if (messlow.includes("wesh alor")) {
         message.channel.sendMessage("Oh <:051mute:458741153915731993> Je vote pour un ban <:051cool:458741113038176267>");
         }
-        if ((messlow.includes("Jack")) && (messlow.includes("fou"))) {
+        if ((messlow.includes("jack")) && (messlow.includes("fou"))) {
             message.channel.sendMessage("Nan mais monsieur Joker est fou, c'est un fait 🃏 <:051mask:458741159079051285>");
         }
         if (messlow.includes("mdr")) {
             message.channel.sendMessage("Oh que oui c'est rigolo " + author + " <:051tongue1:458741158789513226> <:051vomiting1:458741160257781790> <:051smiling:458741159553138719>");
         }
-        if ((messlow.includes("top 1")) && (messlow.includes("u as"))) {
+        if ((messlow.includes("top 1")) && (messlow.includes("tu as"))) {
             message.channel.sendMessage("Oui j'ai top 1 aujourd'hui <:dxsTOP1:447325154687844352> <:051smile1:458741159288766464>");
         }
-        if (messlow.includes("ui va là")) {
+        if (messlow.includes("qui va là")) {
             message.channel.sendMessage("Inspecteur gadget 🕵️<:051cool1:458741115059830785>");
         }
         if (messlow.includes("1 2 3")) {
             message.channel.sendMessage("Viva l'Italia ! 🇮🇹 🇮🇹 🇮🇹 🇮🇹");
         }
-        if (messlow.includes("lurpy")) {
+        if (messlow.includes("blurpy")) {
             message.channel.sendMessage("Oh mon dieu je coule ! <:051astonished1:458741111884873748><:051cry:458741122169044994>");
         }
-        if (messlow.includes("u veux un kou")) {
+        if (messlow.includes("tu veux un kou")) {
             message.channel.sendMessage("Hein quoi ?! Sérieusement ?! Juste un seul !? <:051cry:458741122169044994><:051sad1:458741156357079070>");
         }
-        if ((messlow.includes("uleur préfér")) && (messlow.includes("quoi"))) {
+        if ((messlow.includes("couleur préfér")) && (messlow.includes("quoi"))) {
             message.channel.sendMessage("Ma couleur préférée, c'est un légume ! <:051shocked:458741159133708330>");
         }
-        if (messlow.includes("est 1 2")) {
+        if (messlow.includes("test 1 2")) {
             message.channel.sendMessage("Je vous reçois cinq sur cinq <:051cool1:458741115059830785>");
         }
-        if (messlow.includes("atan")) {
+        if (messlow.includes("satan")) {
             message.channel.sendMessage("Bouche Un Coin <:dizzzy:465216567341481994>");
         }
-        if (messlow.includes("Phrase à changer")) {
+        if (messlow.includes("PHRASE EN MINUSCULE")) {
             message.channel.sendMessage("La réponse");
         }
-        if (messlow.includes("Phrase à changer")) {
+        if (messlow.includes("PHRASE EN MINUSCULE")) {
             message.channel.sendMessage("La réponse");
         }
-        if (messlow.includes("Phrase à changer")) {
+        if (messlow.includes("PHRASE EN MINUSCULE")) {
             message.channel.sendMessage("La réponse");
         }
-        if (messlow.includes("Phrase à changer")) {
+        if (messlow.includes("PHRASE EN MINUSCULE")) {
             message.channel.sendMessage("La réponse");
         }
-        if (messlow.includes("Phrase à changer")) {
+        if (messlow.includes("PHRASE EN MINUSCULE")) {
             message.channel.sendMessage("La réponse");
         }
-        if (messlow.includes("Phrase à changer")) {
+        if (messlow.includes("PHRASE EN MINUSCULE")) {
             message.channel.sendMessage("La réponse");
         }
-        if (messlow.includes("eilleur arme du je")) {
+        if (messlow.includes("meilleur arme du jeu")) {
             rando2();
             if (randnum == 1) {
                 message.channel.sendMessage("LE BOT REPOND ICI");
@@ -306,7 +306,7 @@ bot.on('message', message => {
         }
         
         // REACT
-        if ((messlow.includes("ouce")) && (messlow.includes("bleu"))) {
+        if ((messlow.includes("pouce")) && (messlow.includes("bleu"))) {
             message.react(bot.emojis.get("434400113356701698"))
         }
         if (messlow.includes("pomme")) {
