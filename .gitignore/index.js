@@ -240,13 +240,14 @@ bot.on('message', message => {
         }
         if (messlow.includes("hacking")) {
             message.delete()
+            const charge = client.emojis.find("name", "charge");
             var i = 0;
             var verbe = faker.hacker.ingverb();
             while (i < 10) {
             var verbe = faker.hacker.ingverb();
             console.log(verbe);
             message.channel.sendMessage({
-                    "embed": {"color": 767488, "fields": [{"name": verbe, "value": "On est à " + i + "0%  <:051angel:458741109925871676>"}]}})
+                    "embed": {"color": 767488, "fields": [{"name": verbe, "value": "On est à " + i + "0%  " + charge}]}})
                 .then(msg => {
                 msg.delete(10000)
             })
@@ -259,11 +260,6 @@ bot.on('message', message => {
             })
                 message.reply("le hacking s'est passé comme prévu <:051devil:458741126552223755>")}
             }
-        }
-        if (messlow.includes("emoj")) {
-            var emojis = bot.emojis.array();
-           // var res = emojis.split("`:/n`");
-            message.channel.sendMessage("`" + emojis + "`");
         }
         if (messlow.includes("PHRASE EN MINUSCULE")) {
             message.channel.sendMessage("La réponse");
