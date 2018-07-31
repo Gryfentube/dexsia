@@ -5,6 +5,7 @@ faker.locale = "fr";
 const FileSync = require('lowdb/adapters/FileSync')
 const bot = new Discord.Client();
 const adapter = new FileSync('database.json');
+var i = 0;
 const db = low(adapter);
     db.defaults({ ann:[]})
         .write()
