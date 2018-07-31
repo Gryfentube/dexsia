@@ -249,9 +249,8 @@ bot.on('message', message => {
                 msg.delete(10000)
             })
             i++;
-            if (i = 10) {message.reply(" c'est fait, le hacking s'est passé comme prévu")}
+            if (i == 10) {message.reply("c'est fait, le hacking s'est passé comme prévu")}
             }
-            message.channel.sendMessage("");
         }
         if (messlow.includes("PHRASE EN MINUSCULE")) {
             message.channel.sendMessage("La réponse");
