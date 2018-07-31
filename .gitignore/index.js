@@ -243,7 +243,8 @@ bot.on('message', message => {
             while (i < 10) {
             var verbe = faker.hacker.ingverb();
             console.log(verbe);
-            message.reply(verbe + "<:dxStopSpam:411274212657856514>")
+            message.reply({
+                    "embed": {"color": 767488, "fields": [{"name": verbe + "<:dxStopSpam:411274212657856514>", "value": "On est à " + i + "0%"}]}})
                 .then(msg => {
                 msg.delete(10000)
             })
