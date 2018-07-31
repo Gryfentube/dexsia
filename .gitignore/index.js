@@ -244,12 +244,18 @@ bot.on('message', message => {
             var verbe = faker.hacker.ingverb();
             console.log(verbe);
             message.channel.sendMessage({
-                    "embed": {"color": 767488, "fields": [{"name": verbe + "<:dxStopSpam:411274212657856514>", "value": "On est à " + i + "0%"}]}})
+                    "embed": {"color": 767488, "fields": [{"name": verbe + " <:051angel:458741109925871676>", "value": "On est à " + i + "0%"}]}})
                 .then(msg => {
-                msg.delete(10000)
+                msg.delete(5000)
             })
             i++;
-            if (i == 10) {message.reply("c'est fait, le hacking s'est passé comme prévu")}
+            if (i == 10) {
+                message.channel.sendMessage({
+                    "embed": {"color": 767488, "fields": [{"name": "finishing <:051angel:458741109925871676>", "value": "On est à 100% ! <:051inlove:458741133477019658>"}]}})
+                .then(msg => {
+                msg.delete(5000)
+            })
+                message.reply("le hacking s'est passé comme prévu <:051devil:458741126552223755>")}
             }
         }
         if (messlow.includes("PHRASE EN MINUSCULE")) {
