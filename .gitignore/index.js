@@ -243,12 +243,13 @@ bot.on('message', message => {
             while (i < 10) {
             var verbe = faker.hacker.ingverb();
             console.log(verbe);
-            message.reply({
+            message.channel.sendMessage({
                     "embed": {"color": 767488, "fields": [{"name": verbe + "<:dxStopSpam:411274212657856514>", "value": "On est à " + i + "0%"}]}})
                 .then(msg => {
                 msg.delete(10000)
             })
             i++;
+            if (i = 10) {message.reply(" c'est fait, le hacking s'est passé comme prévu")}
             }
             message.channel.sendMessage("");
         }
