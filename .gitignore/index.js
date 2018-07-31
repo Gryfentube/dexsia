@@ -248,14 +248,14 @@ bot.on('message', message => {
             message.channel.sendMessage({
                     "embed": {"color": 767488, "fields": [{"name": verbe, "value": "On est à " + i + "0%  <:051angel:458741109925871676>"}]}})
                 .then(msg => {
-                msg.delete(5000)
+                msg.delete(10000)
             })
             i++;
             if (i == 10) {
                 message.channel.sendMessage({
                     "embed": {"color": 767488, "fields": [{"name": "finishing", "value": "On est à 100% ! <:051inlove:458741133477019658>"}]}})
                 .then(msg => {
-                msg.delete(5000)
+                msg.delete(10000)
             })
                 message.reply("le hacking s'est passé comme prévu <:051devil:458741126552223755>")}
             }
