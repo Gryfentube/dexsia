@@ -41,6 +41,16 @@ function attachIsImage(msgAttach) {
     var url = msgAttach.url;
     //True if this url is a png image.
     return url.indexOf("png", url.length - "png".length /*or 3*/) !== -1;}
+function time() {
+    var ladate = message.createdAt;
+            var minute = ladate.getMinutes();
+            var heure = ladate.getHours() + 2;
+            if (heure === 24) {var heure = 0}
+            if (heure === 25) {var heure = 1}
+            if (heure < 10) {heure = "0" + heure}
+            if (minute < 10) {minute = "0" + minute};
+            if ((minute < 18) && (minute > 6))
+}
 
 
 var prefix = ("_"); //définir le prefix du bot
@@ -91,19 +101,7 @@ bot.on('message', message => {
         message.channel.sendMessage("Tu as raison " + author + ", il est temps d'aller dormir <:051sleeping:473830229513601024> Bonne nuit !");
         }
         if (message.content.startsWith("bonsoir")) {
-            var ladate = message.createdAt;
-            var minute = ladate.getMinutes();
-            var heure = ladate.getHours() + 2;
-            if (heure === 24) {var heure = 0}
-            if (heure === 25) {var heure = 1}
-            if (heure < 10) {heure = "0" + heure}
-            if (minute < 10) {minute = "0" + minute};
-            if ((minute < 18) && (minute > 6)) {
-            message.channel.sendMessage("Tu aurais pu dire Bonjour " + author + ", il est seulement " + heure + "h" + minute + " tu sais <:051tongue:473830231002841089>");
-            }
-            else {
                 message.channel.sendMessage("Bonsoir " + author + " ! <:051smile1:473830230302261259>");
-            }
         }
         if (messlow.includes("hello")) {
             message.channel.sendMessage("Heeeellooo " + author + " ! How are you ? <:051happy1:473830225709629472>");
