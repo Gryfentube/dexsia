@@ -261,7 +261,7 @@ bot.on('message', message => {
             }
         }
         if (messlow.startsWith("vive")) {
-            var vive = value;
+            var vive = value.substr(5);
             message.channel.sendMessage("D'acc");
         }
         if (messlow.includes("vive quoi ?")) {
