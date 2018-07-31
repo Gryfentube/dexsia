@@ -242,7 +242,8 @@ bot.on('message', message => {
             var verbe = faker.hacker.ingverb();
             while (i < 10) {
             var verbe = faker.hacker.ingverb();
-            message.channel.sendMessage("The number is " + i);
+            console.log(verbe);
+            message.channel.sendMessage("oui mais" + verbe).then(message.delete(3000));
             i++;
             }
             message.channel.sendMessage("");
