@@ -238,7 +238,7 @@ bot.on('message', message => {
         }
         if (messlow.includes("je veux un chat")) {
             var chat = faker.image.cats();
-            message.channel.sendMessag({"embed": {"color": 4886754,
+            message.channel.sendMessage({"embed": {"color": 4886754,
     "image": {"url": chat}}});
         }
         if (messlow.includes("PHRASE EN MINUSCULE")) {
