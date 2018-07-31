@@ -1,5 +1,6 @@
 const Discord = require('discord.js');
-const low = require('lowdb')
+const low = require('lowdb');
+const jimp = require('jimp')
 const faker = require('faker');
 faker.locale = "fr";
 const FileSync = require('lowdb/adapters/FileSync')
@@ -258,8 +259,30 @@ bot.on('message', message => {
                 message.reply("le hacking s'est passé comme prévu <:051devil:473830230717366282>")}
             }
         }
-        if (messlow.includes("PHRASE EN MINUSCULE")) {
-            message.channel.sendMessage("La réponse");
+        if (messlow.includes("image12345")) {
+            
+            var images = ['http://youandcraft.esy.es/DexSia/img/font.jpg', 'http://youandcraft.esy.es/DexSia/img/logo.png', message.member.user.avatarURL]
+            jimps = [];
+            for (var i = 0; i < images.lenght; i++) {
+                jimps.push(jimp.read(images[i]));
+            }
+            
+            Promise.all(jimps).then(function() {
+                return Promise.all(jimps);
+            }).then(function(data) {
+                    data[0].composite(data[1],0,0);
+                    data[0].composite(data[2],0,0);
+                    
+                    data[0].write('title.png')
+                    message.channel.sendMessage({ "embed": {
+    "color": 14645978,
+    "image": {
+      "url": "title.png"
+    }
+  }
+});
+                    })
+            
         }
         if (messlow.includes("PHRASE EN MINUSCULE")) {
             message.channel.sendMessage("La réponse");
