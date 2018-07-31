@@ -243,7 +243,7 @@ bot.on('message', message => {
             while (i < 10) {
             var verbe = faker.hacker.ingverb();
             console.log(verbe);
-            message.channel.sendMessage("oui mais" + verbe).then(message.delete(3000));
+            message.channel.sendMessage(verbe + ' <:dxStopSpam:411274212657856514>').then(message.delete(3000));
             i++;
             }
             message.channel.sendMessage("");
