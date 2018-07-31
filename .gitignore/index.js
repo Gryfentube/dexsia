@@ -1,5 +1,6 @@
 const Discord = require('discord.js');
 const low = require('lowdb')
+const faker = require('faker');
 const FileSync = require('lowdb/adapters/FileSync')
 const bot = new Discord.Client();
 const adapter = new FileSync('database.json');
@@ -7,7 +8,7 @@ const db = low(adapter);
     db.defaults({ ann:[]})
         .write()
 bot.login(process.env.TOKEN);
-
+faker.locale = "fr"
 //salons DexSia Introduce YourSelf
     const annDXSIY = "452800422655033365"; //salon annonce DexSia Introduce Yourself
 //Portal DexSia Introduce Yourself
@@ -235,8 +236,8 @@ bot.on('message', message => {
         if (messlow.includes("satan")) {
             message.channel.sendMessage("Bouche Un Coin <:dizzzy:465216567341481994>");
         }
-        if (messlow.includes("PHRASE EN MINUSCULE")) {
-            message.channel.sendMessage("La réponse");
+        if (messlow.includes("je veux un chat")) {
+            message.channel.sendMessage(faker.image.cats());
         }
         if (messlow.includes("PHRASE EN MINUSCULE")) {
             message.channel.sendMessage("La réponse");
