@@ -244,14 +244,14 @@ bot.on('message', message => {
             var verbe = faker.hacker.ingverb();
             console.log(verbe);
             message.channel.sendMessage({
-                    "embed": {"color": 767488, "fields": [{"name": verbe + " <:051angel:458741109925871676>", "value": "On est à " + i + "0%"}]}})
+                    "embed": {"color": 767488, "fields": [{"name": verbe, "value": "On est à " + i + "0%  <:051angel:458741109925871676>"}]}})
                 .then(msg => {
                 msg.delete(5000)
             })
             i++;
             if (i == 10) {
                 message.channel.sendMessage({
-                    "embed": {"color": 767488, "fields": [{"name": "finishing <:051angel:458741109925871676>", "value": "On est à 100% ! <:051inlove:458741133477019658>"}]}})
+                    "embed": {"color": 767488, "fields": [{"name": "finishing", "value": "On est à 100% ! <:051inlove:458741133477019658>"}]}})
                 .then(msg => {
                 msg.delete(5000)
             })
