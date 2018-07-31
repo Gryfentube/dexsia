@@ -170,7 +170,7 @@ bot.on('message', message => {
                     message.channel.sendMessage("Ah nan mais ça pu... Tu es sérieuse ?");
                 }
                 if (randnum == 2) {
-                    message.channel.sendMessage("C'est encore Mélia c'est ça ?! <:051vomiting:458741158412156929> <:051sick:458741159079051289>");
+                    message.channel.sendMessage("C'est encore Mélia c'est ça ?! <:051vomiting:473830228448378910> <:051sick:473830230146940938>");
                 }
             }
             else {
@@ -181,7 +181,7 @@ bot.on('message', message => {
                     message.channel.sendMessage("Ah nan mais ça pu... Vous êtes sérieux ?");
                 }
                 if (randnum == 2) {
-                    message.channel.sendMessage("C'est encore Jack c'est ça ?! <:051vomiting:458741158412156929> <:051sick:458741159079051289>");
+                    message.channel.sendMessage("C'est encore Jack c'est ça ?! <:051vomiting:473830228448378910> <:051sick:473830230146940938>");
                 }
             }
         }
@@ -198,40 +198,40 @@ bot.on('message', message => {
             message.channel.sendMessage("Imaginez que vous avez O biscuit et que vous les partagez à part égale entre O ami. Combien de biscuits ont chacun de vos amis? Vous voyez, ce n'est pas logique.");
         }
         if (messlow.includes("je suis dexsia")) {
-            message.channel.sendMessage("Ce nom me dis quelque chose... <:051sweat:458741158105841665>");
+            message.channel.sendMessage("Ce nom me dis quelque chose... <:051sweat:473830227823296523>");
         }
         if (messlow.includes("pouse moi")) {
-            message.channel.sendMessage("Soyons juste amis d'accord ? <:hehe:465225404307996674>");
+            message.channel.sendMessage("Soyons juste amis d'accord ? <:051unamused:473830228783792128>");
         }
         if (messlow.includes("j'ai faim")) {
             message.channel.sendMessage("Va te nourir, je ne suis pas ta mère");
         }
         if (messlow.includes("wesh alor")) {
-        message.channel.sendMessage("Oh <:051mute:458741153915731993> Je vote pour un ban <:051cool:458741113038176267>");
+        message.channel.sendMessage("Oh <:051mute:473830218381918218> Je vote pour un ban <:051cool:473830212992237589>");
         }
         if ((messlow.includes("jack")) && (messlow.includes("fou"))) {
-            message.channel.sendMessage("Nan mais monsieur Joker est fou, c'est un fait 🃏 <:051mask:458741159079051285>");
+            message.channel.sendMessage("Nan mais monsieur Joker est fou, c'est un fait 🃏 <:051mask:473830229190770688>");
         }
         if (messlow.includes("mdr")) {
-            message.channel.sendMessage("Oh que oui c'est rigolo " + author + " <:051tongue1:458741158789513226> <:051vomiting1:458741160257781790> <:051smiling:458741159553138719>");
+            message.channel.sendMessage("Oh que oui c'est rigolo " + author + " <:051tongue:473830231002841089> <:051vomiting1:473830230474358794> <:051smiling:473830230797058048>");
         }
         if ((messlow.includes("top 1")) && (messlow.includes("tu as"))) {
-            message.channel.sendMessage("Oui j'ai top 1 aujourd'hui <:dxsTOP1:447325154687844352> <:051smile1:458741159288766464>");
+            message.channel.sendMessage("Oui j'ai top 1 aujourd'hui <:dxsTOP1:447325154687844352> <:051smile1:473830230302261259>");
         }
         if (messlow.includes("qui va là")) {
-            message.channel.sendMessage("Inspecteur gadget 🕵️<:051cool1:458741115059830785>");
+            message.channel.sendMessage("Inspecteur gadget 🕵️<:051cool1:473830230210117642>");
         }
         if (messlow.includes("1 2 3")) {
             message.channel.sendMessage("Viva l'Italia ! 🇮🇹 🇮🇹 🇮🇹 🇮🇹");
         }
         if (messlow.includes("blurpy")) {
-            message.channel.sendMessage("Oh mon dieu je coule ! <:051astonished1:458741111884873748><:051cry:458741122169044994>");
+            message.channel.sendMessage("Oh mon dieu je coule ! <:051astonished:473830199482384384><:051cry:473830225801641987>");
         }
         if (messlow.includes("tu veux un kou")) {
-            message.channel.sendMessage("Hein quoi ?! Sérieusement ?! Juste un seul !? <:051cry:458741122169044994><:051sad1:458741156357079070>");
+            message.channel.sendMessage("Hein quoi ?! Sérieusement ?! Juste un seul !? <:051cry:473830225801641987><:051sad1:473830226695159809>");
         }
         if ((messlow.includes("couleur préfér")) && (messlow.includes("quoi"))) {
-            message.channel.sendMessage("Ma couleur préférée, c'est un légume ! <:051shocked:458741159133708330>");
+            message.channel.sendMessage("Ma couleur préférée, c'est un légume ! <:051shocked:473830229736030209>");
         }
         if (messlow.includes("test 1 2")) {
             message.channel.sendMessage("Je vous reçois cinq sur cinq <:051cool1:458741115059830785>");
@@ -259,7 +259,7 @@ bot.on('message', message => {
                 .then(msg => {
                 msg.delete(10000)
             })
-                message.reply("le hacking s'est passé comme prévu <:051devil:458741126552223755>")}
+                message.reply("le hacking s'est passé comme prévu <:051devil:473830230717366282>")}
             }
         }
         if (messlow.includes("PHRASE EN MINUSCULE")) {
@@ -343,7 +343,7 @@ bot.on('message', message => {
             message.react(bot.emojis.get("465180425225240578")) // blblbl
         }
         if (message.member.id === "239310906981482496") { // Jack
-            message.react(bot.emojis.get("466031285089992714")); //dizzy
+            message.react(bot.emojis.get("466031285089992714")); //dizzzy
             message.react(bot.emojis.get("465206990424113152")) //Jack Daniel
         }
         if (message.member.id === "426496080272818186") { //Marie
@@ -382,12 +382,12 @@ bot.on('message', message => {
 
 bot.on("guildMemberAdd", member => { //Quand un membre entre dans le serveur
     var welcomeDXS = member.guild.channels.find("name", "welcome"); //variable pour le salon welcome
-    welcomeDXS.sendMessage('Passe un bon moment dans la **DexSia** ' + member.user + ' 😉') //envoie le message de bienvenue
+    welcomeDXS.sendMessage('Passe un bon moment dans la **DexSia** <:051wink:473830228410499072>') //envoie le message de bienvenue
     bot.channels.get(consauleDXS).sendMessage(member.user + " est arrivé dans la DexSia, le message s'est bien affiché")  //console
 });
 
 bot.on("guildMemberRemove", member => { //Quand un membre quitte dans le serveur
     var aurevoirDXS = member.guild.channels.find("name", "aurevoir"); //variable pour le salon aurevoir
-    aurevoirDXS.sendMessage('**' + member.displayName + '** est partie. Rest in pepperoni...') //envoie le message de aurevoir
+    aurevoirDXS.sendMessage('**' + member.displayName + '** est partie. Rest in pepperoni... <:051cry:473830225801641987>') //envoie le message de aurevoir
     bot.channels.get(consauleDXS).sendMessage(member.user + " a quitté la DexSia, le message s'est bien affiché")  //console
 })
