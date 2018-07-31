@@ -237,7 +237,9 @@ bot.on('message', message => {
             message.channel.sendMessage("Bouche Un Coin <:dizzzy:465216567341481994>");
         }
         if (messlow.includes("je veux un chat")) {
-            message.channel.sendMessage(faker.image.cats());
+            var chat = faker.image.cats();
+            message.channel.sendMessage(chat);
+            console.log(chat)
         }
         if (messlow.includes("PHRASE EN MINUSCULE")) {
             message.channel.sendMessage("La réponse");
