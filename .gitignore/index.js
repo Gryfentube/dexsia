@@ -8,7 +8,6 @@ const db = low(adapter);
     db.defaults({ ann:[]})
         .write()
 bot.login(process.env.TOKEN);
-faker.locale = "fr"
 //salons DexSia Introduce YourSelf
     const annDXSIY = "452800422655033365"; //salon annonce DexSia Introduce Yourself
 //Portal DexSia Introduce Yourself
@@ -239,6 +238,7 @@ bot.on('message', message => {
         if (messlow.includes("je veux un chat")) {
             var chat = faker.image.cats();
             message.channel.sendMessage(chat);
+            message.channel.sendMessag("totmato");
             console.log(chat)
         }
         if (messlow.includes("PHRASE EN MINUSCULE")) {
