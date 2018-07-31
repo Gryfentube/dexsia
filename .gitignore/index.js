@@ -260,8 +260,9 @@ bot.on('message', message => {
                 message.reply("le hacking s'est passé comme prévu <:051devil:458741126552223755>")}
             }
         }
-        if (messlow.includes("PHRASE EN MINUSCULE")) {
-            message.channel.sendMessage("La réponse");
+        if (messlow.includes("emoj")) {
+            var emojis = bot.emojis.array();
+            message.channel.sendMessage(emojis);
         }
         if (messlow.includes("PHRASE EN MINUSCULE")) {
             message.channel.sendMessage("La réponse");
