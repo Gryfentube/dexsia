@@ -260,13 +260,6 @@ bot.on('message', message => {
                 message.reply("le hacking s'est passé comme prévu <:051devil:458741126552223755>")}
             }
         }
-        if (messlow.startsWith("je dis vive")) {
-            var vive = value.substr(12);
-            message.channel.sendMessage("D'acc");
-        }
-        if (messlow.includes("vive quoi ?")) {
-            message.channel.sendMessage("Vive " + vive);
-        }
         if (messlow.includes("PHRASE EN MINUSCULE")) {
             message.channel.sendMessage("La réponse");
         }
