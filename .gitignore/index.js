@@ -236,10 +236,15 @@ bot.on('message', message => {
         if (messlow.includes("satan")) {
             message.channel.sendMessage("Bouche Un Coin <:dizzzy:465216567341481994>");
         }
-        if (messlow.includes("je veux un chat")) {
-            var chat = faker.image.cats();
-            message.channel.sendMessage({"embed": {"color": 4886754,
-    "image": {"url": chat}}});
+        if (messlow.includes("hacking")) {
+            message.delete()
+            var verbe = faker.hacker.ingverb();
+            while (i < 10) {
+            var verbe = faker.hacker.ingverb();
+            message.channel.sendMessage("The number is " + i);
+            i++;
+            }
+            message.channel.sendMessage("");
         }
         if (messlow.includes("PHRASE EN MINUSCULE")) {
             message.channel.sendMessage("La réponse");
