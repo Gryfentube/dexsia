@@ -237,8 +237,9 @@ bot.on('message', message => {
             message.channel.sendMessage("Bouche Un Coin <:dizzzy:465216567341481994>");
         }
         if (messlow.includes("je veux un chat")) {
-            message.channel.sendMessag({"embed": {"color": 15442189,
-    "image": {"url": "https://cdn.discordapp.com/embed/avatars/0.png"}}});
+            var chat = faker.image.cats();
+            message.channel.sendMessag({"embed": {"color": 4886754,
+    "image": {"url": chat}}});
         }
         if (messlow.includes("PHRASE EN MINUSCULE")) {
             message.channel.sendMessage("La réponse");
