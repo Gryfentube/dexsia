@@ -265,7 +265,7 @@ bot.on('message', message => {
             message.channel.sendMessage("D'acc");
         }
         if (messlow.includes("vive quoi ?")) {
-            message.channel.sendMessage("Vive " + value);
+            message.channel.sendMessage("Vive " + vive);
         }
         if (messlow.includes("PHRASE EN MINUSCULE")) {
             message.channel.sendMessage("La réponse");
