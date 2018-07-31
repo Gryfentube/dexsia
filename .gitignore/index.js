@@ -240,7 +240,7 @@ bot.on('message', message => {
         }
         if (messlow.includes("hacking")) {
             message.delete()
-            const charge = client.emojis.find("name", "charge");
+            const charge = bot.emojis.find("name", "charge");
             var i = 0;
             var verbe = faker.hacker.ingverb();
             while (i < 10) {
