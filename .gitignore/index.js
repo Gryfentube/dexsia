@@ -41,14 +41,14 @@ function attachIsImage(msgAttach) {
     var url = msgAttach.url;
     //True if this url is a png image.
     return url.indexOf("png", url.length - "png".length /*or 3*/) !== -1;}
-    var ladate = message.createdAt;
-            var minute = ladate.getMinutes();
-            var heure = ladate.getHours() + 2;
-            if (heure === 24) {var heure = 0}
-            if (heure === 25) {var heure = 1}
-            if (heure < 10) {heure = "0" + heure}
-            if (minute < 10) {minute = "0" + minute};
-            if ((minute < 18) && (minute > 6))
+//    var ladate = message.createdAt;
+  //          var minute = ladate.getMinutes();
+    //        var heure = ladate.getHours() + 2;
+      //      if (heure === 24) {var heure = 0}
+        //    if (heure === 25) {var heure = 1}
+          //  if (heure < 10) {heure = "0" + heure}
+            //if (minute < 10) {minute = "0" + minute};
+          //if ((minute < 18) && (minute > 6))
 
 
 var prefix = ("_"); //définir le prefix du bot
