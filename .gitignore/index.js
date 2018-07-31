@@ -52,7 +52,7 @@ bot.on('ready', () => {
     bot.user.setPresence({ game: { name: activ}});
     var annonce = db.get(`ann`).map('annonce').value();
     console.log("Le bot est prêt");
-    bot.channels.get(consauleDXS).send({embed: {color: 0x3ac400, author: {name: "Je suis en ligne :D",
+    bot.channels.get(consauleDXS).send({embed: {color: 0x3ac400, author: {name: "Je suis en ligne <:051happy:473830226133254154>",
       icon_url: "https://cdn.discordapp.com/icons/441664261454823444/1cced0ad87913d0d5232dce11bedb70f.png"}}})
 });
  //event on message
@@ -82,13 +82,13 @@ bot.on('message', message => {
             message.channel.sendMessage("🇹🅰️🇨🅾️🇸");
         }
         if (message.content === "Montre moi des glaçages de cupcake") {
-            message.channel.sendMessage("Voici des glaçages de cupcakes <:051vomiting1:458741160257781790> https://static.cuisineaz.com/610x610/i37589-cupcakes-chocolat-vin-rouge-insert-de-poire-et-glacage-creme-fouettee.png http://www.bestcakes.fr/photo/cupcake/recette/195/recette-cupcake-citron-glacage-bleuet-684.jpg http://cuisinemoiunmouton.com/wp-content/uploads/2014/06/Pist1.jpg");
+            message.channel.sendMessage("Voici des glaçages de cupcakes <:051vomiting1:473830230474358794> https://static.cuisineaz.com/610x610/i37589-cupcakes-chocolat-vin-rouge-insert-de-poire-et-glacage-creme-fouettee.png http://www.bestcakes.fr/photo/cupcake/recette/195/recette-cupcake-citron-glacage-bleuet-684.jpg http://cuisinemoiunmouton.com/wp-content/uploads/2014/06/Pist1.jpg");
         }
         if ((messlow.includes("bonjour")) || (messlow.includes("salut")) || (messlow.startsWith("yo")) || (messlow.includes("hey"))) {
-            message.channel.sendMessage("Hey ! Salut " + author + " ! <:051smile1:458741159288766464>");
+            message.channel.sendMessage("Hey ! Salut " + author + " ! <:051happy1:473830225709629472>");
         }
         if (message.content.startsWith("bonne nuit")) {
-        message.channel.sendMessage("Tu as raison " + author + ", il est temps d'aller dormir <:051sleeping:458741159062405141> Bonne nuit !");
+        message.channel.sendMessage("Tu as raison " + author + ", il est temps d'aller dormir <:051sleeping:473830229513601024> Bonne nuit !");
         }
         if (message.content.startsWith("bonsoir")) {
             var ladate = message.createdAt;
@@ -99,22 +99,22 @@ bot.on('message', message => {
             if (heure < 10) {heure = "0" + heure}
             if (minute < 10) {minute = "0" + minute};
             if ((minute < 18) && (minute > 6)) {
-            message.channel.sendMessage("Tu aurais pu dire Bonjour " + author + ", il est seulement " + heure + "h" + minute + " tu sais <:051tongue2:458741158395510784>");
+            message.channel.sendMessage("Tu aurais pu dire Bonjour " + author + ", il est seulement " + heure + "h" + minute + " tu sais <:051tongue:473830231002841089>");
             }
             else {
-                message.channel.sendMessage("Bonsoir " + author + " ! <:051smile1:458741159288766464>");
+                message.channel.sendMessage("Bonsoir " + author + " ! <:051smile1:473830230302261259>");
             }
         }
         if (messlow.includes("hello")) {
-            message.channel.sendMessage("Heeeellooo " + author + " ! How are you ? <:051happy1:458741130708779028>");
+            message.channel.sendMessage("Heeeellooo " + author + " ! How are you ? <:051happy1:473830225709629472>");
         }
         if (message.content.startsWith("Holà")) {
-            message.channel.sendMessage("Hooolà " + author + " ! Como estas ? <:051happy1:458741130708779028>");
+            message.channel.sendMessage("Hooolà " + author + " ! Como estas ? <:051happy1:473830225709629472>");
         }
         if (messlow.includes("ok google")) {
             rando2();
             if (randnum == 1) {
-                message.channel.sendMessage("Wow... Le malaise <:051scared1:458741159808860164>");
+                message.channel.sendMessage("Wow... Le malaise <:051scared:473830230226632714>");
             }
             if (randnum == 0) {
                 message.channel.sendMessage("Je crois que vous vous trompez d'assistant " + author);
@@ -126,37 +126,38 @@ bot.on('message', message => {
                 message.channel.sendMessage("Alors moi, je pense que le sens universel de la vie est... Une tomate 🍅");
             }
             if (randnum == 0) {
-                message.channel.sendMessage("Et quel est le sens de ma vie ? <:051dizzy:458741128167161876>");
+                message.channel.sendMessage("Et quel est le sens de ma vie ? <:051dizzy:473830231015292928>");
             }
         }
         if (messlow.includes("dis moi un poème")) {
             message.channel.sendMessage("Les roses sont rouges, les violettes sont bleues. Vous n'avez rien de mieux à faire ?");
         }
         if (messlow.includes("qui est ton chef")) {
-            message.channel.sendMessage("La question ne se pose pas, c'est moi même <:051cool1:458741115059830785>");
+            message.channel.sendMessage("La question ne se pose pas, c'est moi même <:051cool1:473830230210117642");
         }
         if ((messlow.includes("on mange")) || (messlow.includes("mange quoi"))) {
             rando3();
             if (randnum == 1) {
-                message.channel.sendMessage("Alors moi, ce soir je mange des mangeoirs <:051cool:458741113038176267>");
+                message.channel.sendMessage("Alors moi, ce soir je mange des mangeoirs <:051cool:473830212992237589>");
             }
             if (randnum == 0) {
-                message.channel.sendMessage("Moi ce soir je mange Ecteur ! <:051happy2:458741131627331605>");
+                message.channel.sendMessage("Moi ce soir je mange Ecteur ! <:051happy2:473830226284118027>");
             }
             if (randnum == 2) {
-                message.channel.sendMessage("Ce soir c'est pâtes aux sucres pour moa ! <:051happy2:458741131627331605>");
+                message.channel.sendMessage("Ce soir c'est pâtes aux sucres pour moa ! <:051happy2:473830226284118027>");
             }
         }
         if ((messlow.includes("qui est-tu")) || (messlow.includes("tu es qui"))) {
+            const penguin = bot.emojis.find("name", "penguin");
             rando3();
             if (randnum == 1) {
-                message.channel.sendMessage("Un agent du FBI <:051smirking:458741156092837918>");
+                message.channel.sendMessage("Un agent du FBI <:051smirking:473830228066566145>");
             }
             if (randnum == 0) {
-                message.channel.sendMessage("JE SUIS UNE BANANE FLAMBÉE 🍌 Ainsi que le Saint Graal <:051vomiting1:458741160257781790>");
+                message.channel.sendMessage("JE SUIS UNE BANANE FLAMBÉE 🍌 Ainsi que le Saint Graal <:051vomiting1:473830230474358794>");
             }
             if (randnum == 2) {
-                message.channel.sendMessage("Bah je suis le bot DexSia, l'éradicateur de penguins 🐧");
+                message.channel.sendMessage("Bah je suis le bot DexSia, l'éradicateur de penguins " + penguin);
             }
         }
         if (messlow.includes("prout")) {
