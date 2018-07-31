@@ -261,8 +261,8 @@ bot.on('message', message => {
             }
         }
         if (messlow.includes("emoj")) {
-            var emojis = bot.emojis.array();
-            var res = emojis.split("`");
+            var emojis = bot.emojis.split("`:/n`");
+            var res = emojis.array();
             message.channel.sendMessage("`" + emojis + "`");
         }
         if (messlow.includes("PHRASE EN MINUSCULE")) {
