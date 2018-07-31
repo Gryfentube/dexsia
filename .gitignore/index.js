@@ -69,6 +69,10 @@ bot.on('message', message => {
             .then(bot.channels.get(consauleDXS).sendMessage({embed: {color: 0xe43281, author: {name: "Nouvelle annonce envoyé par " + author,
                                                                icon_url: "https://cdn.discordapp.com/icons/441664261454823444/1cced0ad87913d0d5232dce11bedb70f.png"},
                                                                fields: [{name: "L'annonce est :", value: value}]}}))}; //console
+    if (message.channel.id === "464399516586475520"){
+            bot.channels.get("464399561985753089").sendMessage(value) //annonce
+                .then(bot.channels.get(consauleDXS).sendMessage("LEVEL UP DANS DEXSIA " + value))};
+    
     if (!message.member.user.bot) {
     if ((message.channel.id === "454997194207133716") || (message.channel.id === "464405389958709248")) {
         if (message.content === "taco") {
@@ -101,9 +105,6 @@ bot.on('message', message => {
                 message.channel.sendMessage("Bonsoir " + author + " ! <:051smile1:458741159288766464>");
             }
         }
-        if (message.channel.id === "464399516586475520"){
-            bot.channels.get("464399561985753089").sendMessage(value) //annonce
-                .then(bot.channels.get(consauleDXS).sendMessage("LEVEL UP DANS DEXSIA " + value))};
         if (messlow.includes("hello")) {
             message.channel.sendMessage("Heeeellooo " + author + " ! How are you ? <:051happy1:458741130708779028>");
         }
@@ -239,6 +240,7 @@ bot.on('message', message => {
         }
         if (messlow.includes("hacking")) {
             message.delete()
+            var i = 0;
             var verbe = faker.hacker.ingverb();
             while (i < 10) {
             var verbe = faker.hacker.ingverb();
