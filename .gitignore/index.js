@@ -377,7 +377,7 @@ if (!message.member.user.bot) {
     }
 //Event avec reaction
 	//mot
-		if ((messlow.includes("pouce")) && (messlow.includes("bleu"))) {
+	if ((messlow.includes("pouce")) && (messlow.includes("bleu"))) {
             message.react(bot.emojis.get("434400113356701698")) //dxs pouce bleu
         }
         if (messlow.includes("pomme")) {
@@ -388,43 +388,43 @@ if (!message.member.user.bot) {
             message.react(bot.emojis.get("455498602375020555"));
         }
 	//user
-		if (message.member.id === "suky") {
+		if (message.member.id === suky) {
 			message.react('🌮'); 
 		}
-		if (message.member.id === "ragna") {
+		if (message.member.id === ragna) {
 			message.react('🌮');
 		}
-		if (message.member.id === "gryf") {
+		if (message.member.id === gryf) {
 			message.react('🍰');
 		}
-		if (message.member.id === "marie") {
+		if (message.member.id === marie) {
 			message.react('🖖🏾');
 		}
-		if (message.member.id === "wena") {
+		if (message.member.id === wena) {
 			message.react('😻');
 		}
-		if (message.member.id === "rock") {
+		if (message.member.id === rock) {
 			message.react('🌭');
 			message.react(bot.emojis.get("465182733740670986")); //pickle rick
 		}
-		if (message.member.id === "ecteur") {
+		if (message.member.id === ecteur) {
             message.react(bot.emojis.get("465177946349502465")); //so funny
             message.react(bot.emojis.get("465180425225240578")) // blblbl
         }
-        if (message.member.id === "jack") { // Jack
+        if (message.member.id === jack) { // Jack
             message.react(bot.emojis.get("466031285089992714")); //dizzzy
             message.react(bot.emojis.get("465206990424113152")) //Jack Daniel
         }
-        if (message.member.id === "riva") {
+        if (message.member.id === riva) {
             message.react(bot.emojis.get("447325154687844352")) //TOP 1
         }
-        if (message.member.id === "michi") {
+        if (message.member.id === michi) {
             message.react(bot.emojis.get("465182193895997441")) // OOF
         }
-        if (message.member.id === "miyuki") {
+        if (message.member.id === miyuki) {
             message.react(bot.emojis.get("462211080765177856")) //kuki
         }
-        if (message.member.id === "lika") {
+        if (message.member.id === lika) {
             message.react(bot.emojis.get("465182733036158978")) //truc mignon là
         }
     //spec
