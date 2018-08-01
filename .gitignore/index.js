@@ -432,4 +432,4 @@ if (!message.member.user.bot) {
 	}
 }
 }
-})
+})}
