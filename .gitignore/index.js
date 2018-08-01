@@ -94,6 +94,8 @@ bot.on('message', message => {
 	const soutienstitch = bot.emojis.find("name", "soutienstitch");
 	const penguin = bot.emojis.find("name", "penguin");
 	const charge = bot.emojis.find("name", "charge");
+	const dodostitch = bot.emojis.find("name", "dodostitch");
+	const ventistitch = bot.emojis.find("name", "ventistitch");
 //mess
 	if (message.channel.id === activitDXS) {
         bot.user.setPresence({ game: { name: value}})
@@ -124,7 +126,8 @@ if (!message.member.user.bot) {
         }
     //startwith = message qui comme par
     	if (message.content.startsWith("bonne nuit")) {
-        message.channel.sendMessage("Tu as raison " + author + ", il est temps d'aller dormir <:051sleeping:473830229513601024> Bonne nuit !");
+        message.channel.sendMessage("Tu as raison " + author + ", il est temps d'aller dormir <:051sleeping:473830229513601024> Bonne nuit !")
+            .then(message.channel.sendMessage(dodostitch + " "))
         }
         if (message.content.startsWith("bonsoir")) {
                 message.channel.sendMessage("Bonsoir " + author + " ! <:051smile1:473830230302261259>");
@@ -191,11 +194,14 @@ if (!message.member.user.bot) {
             message.channel.sendMessage("Bouche Un Coin <:dizzzy:465216567341481994>");
         }
         if (messlow.includes("on va à la piscine")) {
-            
             message.channel.sendMessage("Oui attend je mets mon bonnet")
             .then(message.channel.sendMessage(soutienstitch + " "))
         }
-        /*if (messlow.includes("PHRASE EN MINUSCULE")) {
+        if (messlow.includes("j'ai chaud")) {
+            message.channel.sendMessage("OUAIS MOI AUSSI")
+		.then(message.channel.sendMessage(ventistitch + " "))
+        }
+	/*if (messlow.includes("PHRASE EN MINUSCULE")) {
             message.channel.sendMessage("La réponse");
         }*/
     //multiple includes 
