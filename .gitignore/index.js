@@ -357,7 +357,7 @@ if (!message.member.user.bot) {
         }
     }
 //Traduction
-if (message.content.startsWith("Traduit")) {
+	if (message.content.startsWith("Traduit")) {
         if (messlow.includes("pqfui")) {
             message.channel.sendMessage("Pqfui veut dire *Je t'aime* en __Peepo__");
         }
@@ -432,4 +432,4 @@ if (message.content.startsWith("Traduit")) {
 	}
 }
 }
-}
+})
