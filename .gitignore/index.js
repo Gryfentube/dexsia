@@ -257,7 +257,7 @@ bot.on('message', message => {
             i++;
             if (i == 10) {
                 message.channel.sendMessage({
-                    "embed": {"color": 767488, "fields": [{"name": "finishing", "value": "On est à 100% ! <:051inlove:47383022896834150>"}]}})
+                    "embed": {"color": 767488, "fields": [{"name": "finishing", "value": "On est à 100% ! <:051inlove:473830228968341505>"}]}})
                 .then(msg => {
                 msg.delete(10000)
             })
