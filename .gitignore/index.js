@@ -430,6 +430,6 @@ if (!message.member.user.bot) {
             .then(message.react(bot.emojis.get("436628772238917632")));  //pouce rouge      
         }
 	}
+	}
 }
-}
-})}
+})
