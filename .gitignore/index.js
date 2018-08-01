@@ -28,8 +28,9 @@ bot.login(process.env.TOKEN);
 
 //variable de départ
 	faker.locale = "fr";
-	var i = 0;
-
+	var prefix = ("_"); //définir le prefix du bot
+	var activ = ("éradiquer un penguin"); //modifier la valeur entre guillemets pour changer son état au démarage
+	var values = ("empty"); //empecher les soucis de values
 //fonction
 	function rando2(min, max) {
 	  min = Math.ceil(0);
