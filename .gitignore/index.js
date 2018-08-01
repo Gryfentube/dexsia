@@ -125,7 +125,7 @@ if (!message.member.user.bot) {
             message.channel.sendMessage("Voici des glaçages de cupcakes <:051vomiting1:473830230474358794> https://static.cuisineaz.com/610x610/i37589-cupcakes-chocolat-vin-rouge-insert-de-poire-et-glacage-creme-fouettee.png http://www.bestcakes.fr/photo/cupcake/recette/195/recette-cupcake-citron-glacage-bleuet-684.jpg http://cuisinemoiunmouton.com/wp-content/uploads/2014/06/Pist1.jpg");
         }
     //startwith = message qui comme par
-    	if (message.content.startsWith("bonne nuit")) {
+    	if (messlow.startsWith("bonne nuit")) {
         message.channel.sendMessage("Tu as raison " + author + ", il est temps d'aller dormir <:051sleeping:473830229513601024> Bonne nuit !")
             .then(message.channel.sendMessage(dodostitch + " "))
         }
