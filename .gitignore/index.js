@@ -204,19 +204,22 @@ if (!message.member.user.bot) {
 	/*if (messlow.includes("PHRASE EN MINUSCULE")) {
             message.channel.sendMessage("La réponse");
         }*/
-    //multiple includes 
+    //multiple includes &&
     	if ((messlow.includes("jack")) && (messlow.includes("fou"))) {
             message.channel.sendMessage("Nan mais monsieur Joker est fou, c'est un fait 🃏 <:051mask:473830229190770688>");
         }
         if ((messlow.includes("top 1")) && (messlow.includes("tu as"))) {
             message.channel.sendMessage("Oui j'ai top 1 aujourd'hui <:dxsTOP1:447325154687844352> <:051smile1:473830230302261259>");
         }
-    //différents includes
+	if ((messlow.includes("couleur préfér")) && (messlow.includes("c'est quoi"))) {
+            message.channel.sendMessage("Ma couleur préférée, c'est un légume ! <:051shocked:473830229736030209>");
+        }
+    //différents includes ||
         if ((messlow.includes("bonjour")) || (messlow.includes("salut")) || (messlow.startsWith("yo")) || (messlow.includes("hey"))) {
             message.channel.sendMessage("Hey ! Salut " + author + " ! <:051happy1:473830225709629472>");
         }
-        if ((messlow.includes("couleur préfér")) && (messlow.includes("c'est quoi"))) {
-            message.channel.sendMessage("Ma couleur préférée, c'est un légume ! <:051shocked:473830229736030209>");
+        if ((messlow.includes("c'est quoi la réponse")) || (messlow.includes("quelle est la réponse"))) {
+            message.channel.sendMessage("La réponse D");
         }
 //2 réponses possibles
 	//content = message qui est 
