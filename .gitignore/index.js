@@ -432,3 +432,4 @@ if (message.content.startsWith("Traduit")) {
 	}
 }
 }
+}
