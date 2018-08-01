@@ -1,5 +1,4 @@
 //constante
-	bot.login(process.env.TOKEN);
 	const Discord = require('discord.js');
 	const low = require('lowdb');
 	const faker = require('faker');
@@ -9,6 +8,7 @@
         .write()
 	const bot = new Discord.Client();
 	const adapter = new FileSync('database.json');
+	bot.login(process.env.TOKEN);
 		//salon 
 			//salons DexSia Introduce YourSelf
 			    const annDXSIY = "452800422655033365"; //salon annonce DexSia Introduce Yourself
