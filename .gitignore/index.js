@@ -239,7 +239,7 @@ bot.on('message', message => {
         if (messlow.includes("on va à la piscine")) {
             const soutienstitch = bot.emojis.find("name", "soutienstitch");
             message.channel.sendMessage("Oui attend je mets mon bonnet")
-            .then(message.channel.sendMessage(soutienstitch))
+            .then(message.channel.sendMessage(soutienstitch + " "))
         }
         if (messlow.includes("hacking")) {
             message.delete()
