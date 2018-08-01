@@ -236,6 +236,10 @@ bot.on('message', message => {
         if (messlow.includes("satan")) {
             message.channel.sendMessage("Bouche Un Coin <:dizzzy:465216567341481994>");
         }
+        if (messlow.includes("on va à la piscine")) {
+            const soutienstitch = bot.emojis.find("name", "soutienstitch");
+            message.channel.sendMessage("Oui attend je mets mon bonnet " + soutienstitch);
+        }
         if (messlow.includes("hacking")) {
             message.delete()
             const charge = bot.emojis.find("name", "charge");
@@ -258,31 +262,6 @@ bot.on('message', message => {
             })
                 message.reply("le hacking s'est passé comme prévu <:051devil:473830230717366282>")}
             }
-        }
-        if (messlow.includes("image12345")) {
-            
-            var images = ['http://youandcraft.esy.es/DexSia/img/font.jpg', 'http://youandcraft.esy.es/DexSia/img/logo.png', message.member.user.avatarURL]
-            jimps = [];
-            for (var i = 0; i < images.lenght; i++) {
-                jimps.push(jimp.read(images[i]));
-            }
-            
-            Promise.all(jimps).then(function() {
-                return Promise.all(jimps);
-            }).then(function(data) {
-                    data[0].composite(data[1],0,0);
-                    data[0].composite(data[2],0,0);
-                    
-                    data[0].write('title.png')
-                    message.channel.sendMessage({ "embed": {
-    "color": 14645978,
-    "image": {
-      "url": "title.png"
-    }
-  }
-});
-                    })
-            
         }
         if (messlow.includes("PHRASE EN MINUSCULE")) {
             message.channel.sendMessage("La réponse");
