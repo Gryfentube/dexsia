@@ -59,7 +59,7 @@ bot.login(process.env.TOKEN);
 //join member
 bot.on("guildMemberAdd", member => { //Quand un membre entre dans le serveur
     var welcomeDXS = member.guild.channels.find("name", "welcome"); //variable pour le salon welcome
-    welcomeDXS.sendMessage('Passe un bon moment dans la **DexSia** <:051wink:473830228410499072>') //envoie le message de bienvenue
+    welcomeDXS.sendMessage('Passe un bon moment dans la **DexSia** " + member.user + " <:051wink:473830228410499072>') //envoie le message de bienvenue
     bot.channels.get(consauleDXS).sendMessage(member.user + " est arrivé dans la DexSia, le message s'est bien affiché")  //console
 });
 
