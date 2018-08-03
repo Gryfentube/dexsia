@@ -1,17 +1,14 @@
 //constante
 const Discord = require('discord.js');
-const low = require('lowdb');
-const jimp = require('jimp')
 const faker = require('faker');
 faker.locale = "fr";
-const FileSync = require('lowdb/adapters/FileSync')
+const fs = require('fs');
 const bot = new Discord.Client();
-const adapter = new FileSync('database.json');
 var i = 0;
-const db = low(adapter);
-    db.defaults({ ann:[]})
-        .write()
+
 bot.login(process.env.TOKEN);
+
+const cmd = require("./cmd.json");
 		//salon 
 			//salons DexSia Introduce YourSelf
 			    const annDXSIY = "452800422655033365"; //salon annonce DexSia Introduce Yourself
