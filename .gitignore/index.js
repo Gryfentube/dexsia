@@ -357,31 +357,28 @@ if (!message.member.user.bot) {
             }
         }
     }
-	if(message.content.startsWith("Montre moi")) {
-        const url = "https://www.reddit.com/r/" + args[2] + ".json";
-        request.get(url, function(error, response, body){
-            if(!error && response.statusCode === 200){
-                if(!body.includes("nsfw")){
-                    const oui = args[2];
+	if(messlow.startsWith("montre moi")) {
+    if (args[2] === "chats" || args[2] === "chiens" || args[2] === "trukabouffer" || args[2] === "ramen") {
+        if (args[2] === "chats") {var rep = "cats";}
+        if (args[2] === "chiens") {var rep = "dogs";}
+        if (args[2] === "nouriturre") {var rep = "food";}
+        if (args[2] === "ramen") {var rep = "ramen";}
                     const subreddits = [
-                        oui
+                        rep
                     ]
                     const sub = subreddits[Math.round(Math.random() * (subreddits.length - 1))];
                     randomimages(sub).then(url => {
                         const embed = new Discord.RichEmbed()
-                        .setDescription(args[2])
+                        .setDescription("Voici des " + args[2])
                         .setImage(url)
                         .setColor("#6ce0c7")
                         .setFooter('Merci ' + author);
                         return message.channel.send(embed);
                     })
                 }else{
-                    message.channel.send("C'est du NSFW !");
+                    message.channel.sendMessage("J'ai pas compris")
                 }
-            }
-        })
-        
-}
+        }
 //Traduction
 	if (message.content.startsWith("Traduit")) {
         if (messlow.includes("pqfui")) {
