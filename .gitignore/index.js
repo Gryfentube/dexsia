@@ -8,20 +8,15 @@ var i = 0;
 
 bot.login(process.env.TOKEN);
 
-const cmd = require("./cmd.json");
+const salon = require("./salon.json");
 		//salon 
 			//salons DexSia Introduce YourSelf
 			    const annDXSIY = "452800422655033365"; //salon annonce DexSia Introduce Yourself
 			//Portal DexSia Introduce Yourself
 			    const annPoDXSIY = "455740492999688192"; //salon annonce de Portal Dxs IY
-			    const activitDXSIY = "455798472076034051"; //salon activité du bot DexSia Assistant
-			    const consauleDXSIY = "455740278272425995"; //salon console de Portal Dxs IY
-			//salons DexSia
-			    const annDXS = "454994767877636098"; //salon annonce DexSia
+			    const salon.pologdxsIY = "455740278272425995"; //salon console de Portal Dxs IY
 			//Portal DexSia
-			    const annPoDXS = "455740525807665172"; //salon annonce de Portal DexSia
-			    const activitDXS = "455836828214231082"; //salon activité du bot DexSia
-			    const consauleDXS = "455740246110240778"; //salon console de Portal DexSia
+			    const salon.pologdxs = "455740246110240778"; //salon console de Portal DexSia
 
 //variable de départ
 	faker.locale = "fr";
@@ -49,7 +44,7 @@ const cmd = require("./cmd.json");
 	    bot.user.setPresence({ game: { name: activ}});
 	    var annonce = db.get(`ann`).map('annonce').value();
 	    console.log("Le bot est prêt");
-	    bot.channels.get(consauleDXS).send({embed: {color: 0x3ac400, author: {name: "Je suis en ligne :D",
+	    bot.channels.get(salon.pologdxs).send({embed: {color: 0x3ac400, author: {name: "Je suis en ligne :D",
 	      icon_url: "https://cdn.discordapp.com/icons/441664261454823444/1cced0ad87913d0d5232dce11bedb70f.png"}}})
 	});
 
@@ -57,14 +52,14 @@ const cmd = require("./cmd.json");
 bot.on("guildMemberAdd", member => { //Quand un membre entre dans le serveur
     var welcomeDXS = member.guild.channels.find("name", "welcome"); //variable pour le salon welcome
     welcomeDXS.sendMessage('Passe un bon moment dans la **DexSia** ' + member.user + ' <:051wink:473830228410499072>') //envoie le message de bienvenue
-    bot.channels.get(consauleDXS).sendMessage(member.user + " est arrivé dans la DexSia, le message s'est bien affiché")  //console
+    bot.channels.get(salon.pologdxs).sendMessage(member.user + " est arrivé dans la DexSia, le message s'est bien affiché")  //console
 });
 
 //leave member
 bot.on("guildMemberRemove", member => { //Quand un membre quitte dans le serveur
     var aurevoirDXS = member.guild.channels.find("name", "aurevoir"); //variable pour le salon aurevoir
     aurevoirDXS.sendMessage('**' + member.displayName + '** est partie. Rest in pepperoni... <:051cry:473830225801641987>') //envoie le message de aurevoir
-    bot.channels.get(consauleDXS).sendMessage(member.user + " a quitté la DexSia, le message s'est bien affiché")  //console
+    bot.channels.get(salon.pologdxs).sendMessage(member.user + " a quitté la DexSia, le message s'est bien affiché")  //console
 })
 
 //on message
@@ -94,20 +89,20 @@ bot.on('message', message => {
 	const dodostitch = bot.emojis.find("name", "dodostitch");
 	const ventistitch = bot.emojis.find("name", "ventistitch");
 //mess
-	if (message.channel.id === activitDXS) {
+	if (message.channel.id === salon.activitdxs) {
         bot.user.setPresence({ game: { name: value}})
-            .then(bot.channels.get(consauleDXS).sendMessage({embed: {color: 0x3ac400, author: {name: "Je joue maintenant à " + value + " grâce à " + author,
+            .then(bot.channels.get(salon.pologdxs).sendMessage({embed: {color: 0x3ac400, author: {name: "Je joue maintenant à " + value + " grâce à " + author,
                                                                icon_url: "https://cdn.discordapp.com/icons/441664261454823444/1cced0ad87913d0d5232dce11bedb70f.png"}}}))
     };
-    if (message.channel.id === annPoDXS){
-        bot.channels.get(annDXS).sendMessage({embed: {color: 0x3ac400, fields: [{name: "ANNONCE", value: value}]}}) //annonce
-            .then(bot.channels.get(consauleDXS).sendMessage({embed: {color: 0xe43281, author: {name: "Nouvelle annonce envoyé par " + author,
+    if (message.channel.id === salon.annoncedxs){
+        bot.channels.get(salon.poannoncedxs).sendMessage({embed: {color: 0x3ac400, fields: [{name: "ANNONCE", value: value}]}}) //annonce
+            .then(bot.channels.get(salon.pologdxs).sendMessage({embed: {color: 0xe43281, author: {name: "Nouvelle annonce envoyé par " + author,
                                                                icon_url: "https://cdn.discordapp.com/icons/441664261454823444/1cced0ad87913d0d5232dce11bedb70f.png"},
                                                                fields: [{name: "L'annonce est :", value: value}]}}))
     }; //console
     if (message.channel.id === "464399516586475520"){
             bot.channels.get("464399561985753089").sendMessage(value) //annonce
-                .then(bot.channels.get(consauleDXS).sendMessage("LEVEL UP DANS DEXSIA " + value))
+                .then(bot.channels.get(salon.pologdxs).sendMessage("LEVEL UP DANS DEXSIA " + value))
     };
 
 if (!message.member.user.bot) {
