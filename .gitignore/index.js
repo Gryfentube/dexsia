@@ -1,8 +1,11 @@
 //constante
 const Discord = require('discord.js');
+const fs = require('fs');
+const request = require('request');
+const randomimages = require('random-puppy');
 const faker = require('faker');
 faker.locale = "fr";
-const fs = require('fs');
+
 const bot = new Discord.Client();
 var i = 0;
 
