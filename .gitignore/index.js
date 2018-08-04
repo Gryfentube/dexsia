@@ -373,7 +373,7 @@ if (!message.member.user.bot) {
                         .setImage(url)
                         .setColor("#6ce0c7")
                         .setFooter('Merci ' + author);
-                        return msg.channel.send(embed);
+                        return message.channel.send(embed);
                     })
                 }else{
                     msg.channel.send("C'est du NSFW !");
