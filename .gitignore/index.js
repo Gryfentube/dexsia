@@ -405,7 +405,6 @@ if (!message.member.user.bot) {
         }
         if (message.member.id === user.jack) { // Jack
             message.react(bot.emojis.get("466031285089992714")); //dizzzy
-            message.react(bot.emojis.get("465206990424113152")) //Jack Daniel
         }
         if (message.member.id === user.riva) {
             message.react(bot.emojis.get("447325154687844352")) //TOP 1
