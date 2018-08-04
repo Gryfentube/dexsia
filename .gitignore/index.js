@@ -72,6 +72,8 @@ bot.on('message', message => {
 	var author = message.member.displayName;
 	var value = message.content;
 	var messlow = value.toLowerCase();
+	let args = message.content.split(" ");
+    	const cmd = args[0];
 	//gif
 	const soutienstitch = bot.emojis.find("name", "soutienstitch");
 	const penguin = bot.emojis.find("name", "penguin");
@@ -186,20 +188,6 @@ if (!message.member.user.bot) {
         if (messlow.includes("j'ai chaud")) {
             message.channel.sendMessage("OUAIS MOI AUSSI")
 		.then(message.channel.sendMessage(ventistitch + " "))
-        }
-	if (messlow.includes("montre moi un chat")) {
-            const subreddits = [
-                        "cats"
-                    ]
-                    const sub = subreddits[Math.round(Math.random() * (subreddits.length - 1))];
-                    randomimages(sub).then(url => {
-                        const embed = new Discord.RichEmbed()
-                        .setDescription("Voici un chat <:051inlove:473830228968341505>")
-                        .setImage(url)
-                        .setColor("#6ce0c7")
-                        .setFooter('Merci pour ce chat ' + author);
-                        return message.channel.send(embed);
-                    })
         }
 	/*if (messlow.includes("PHRASE EN MINUSCULE")) {
             message.channel.sendMessage("La réponse");
@@ -369,6 +357,31 @@ if (!message.member.user.bot) {
             }
         }
     }
+	if(message.content.startsWith("Montre moi")) {
+        const url = "https://www.reddit.com/r/" + args[2] + ".json";
+        request.get(url, function(error, response, body){
+            if(!error && response.statusCode === 200){
+                if(!body.includes("nsfw")){
+                    const oui = args[2];
+                    const subreddits = [
+                        oui
+                    ]
+                    const sub = subreddits[Math.round(Math.random() * (subreddits.length - 1))];
+                    randomimages(sub).then(url => {
+                        const embed = new Discord.RichEmbed()
+                        .setDescription(args[2])
+                        .setImage(url)
+                        .setColor("#fd3b00")
+                        .setFooter('Merci ' + msg.author.name);
+                        return msg.channel.send(embed);
+                    })
+                }else{
+                    msg.channel.send("C'est du NSFW !");
+                }
+            }
+        })
+        
+}
 //Traduction
 	if (message.content.startsWith("Traduit")) {
         if (messlow.includes("pqfui")) {
