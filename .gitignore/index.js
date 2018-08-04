@@ -371,8 +371,8 @@ if (!message.member.user.bot) {
                         const embed = new Discord.RichEmbed()
                         .setDescription(args[2])
                         .setImage(url)
-                        .setColor("#fd3b00")
-                        .setFooter('Merci ' + msg.author.name);
+                        .setColor("#6ce0c7")
+                        .setFooter('Merci ' + author);
                         return msg.channel.send(embed);
                     })
                 }else{
