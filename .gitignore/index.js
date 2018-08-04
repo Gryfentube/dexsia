@@ -72,7 +72,7 @@ bot.on('message', message => {
 	var author = message.member.displayName;
 	var value = message.content;
 	var messlow = value.toLowerCase();
-	let args = message.content.split(" ");
+	let args = messlow.split(" ");
     	const cmd = args[0];
 	//gif
 	const soutienstitch = bot.emojis.find("name", "soutienstitch");
