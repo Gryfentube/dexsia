@@ -358,18 +358,18 @@ if (!message.member.user.bot) {
         }
     }
 	if(messlow.startsWith("montre moi")) {
-    if (args[2] === "chats" || args[2] === "chiens" || args[2] === "trukabouffer" || args[2] === "ramen") {
-        if (args[2] === "chats") {var rep = "cats";}
-        if (args[2] === "chiens") {var rep = "dogs";}
-        if (args[2] === "nouriturre") {var rep = "food";}
-        if (args[2] === "ramen") {var rep = "ramen";}
+    if (args[3] === "chats" || args[3] === "chiens" || args[3] === "trukabouffer" || args[3] === "ramen") {
+        if (args[3] === "chats") {var rep = "cats";}
+        if (args[3] === "chiens") {var rep = "dogs";}
+        if (args[3] === "trukabouffer") {var rep = "food";}
+        if (args[3] === "ramen") {var rep = "ramen";}
                     const subreddits = [
                         rep
                     ]
                     const sub = subreddits[Math.round(Math.random() * (subreddits.length - 1))];
                     randomimages(sub).then(url => {
                         const embed = new Discord.RichEmbed()
-                        .setDescription("Voici des " + args[2])
+                        .setDescription("Voici des " + args[3])
                         .setImage(url)
                         .setColor("#6ce0c7")
                         .setFooter('Merci ' + author);
