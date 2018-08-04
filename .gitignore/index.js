@@ -81,6 +81,11 @@ bot.on('message', message => {
             .then(bot.channels.get(salon.pologdxs).sendMessage({embed: {color: 0x3ac400, author: {name: "Je joue maintenant à " + value + " grâce à " + author,
                                                                icon_url: "https://cdn.discordapp.com/icons/441664261454823444/1cced0ad87913d0d5232dce11bedb70f.png"}}}))
     };
+	if (message.channel.id === salon.imagedxs) {
+        bot.user.setAvatar({ game: { name: value}})
+            .then(bot.channels.get(salon.pologdxs).sendMessage({embed: {color: 0x3ac400, author: {name: "Voici mon image grâce à " + author,
+                                                               icon_url: value}}}))
+    };
     if (message.channel.id === salon.poannoncedxs){
         bot.channels.get(salon.annoncedxs).sendMessage({embed: {color: 0x3ac400, fields: [{name: "ANNONCE", value: value}]}}) //annonce
             .then(bot.channels.get(salon.pologdxs).sendMessage({embed: {color: 0xe43281, author: {name: "Nouvelle annonce envoyé par " + author,
