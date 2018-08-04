@@ -197,7 +197,7 @@ if (!message.member.user.bot) {
                         .setDescription("Voici un chat <:051inlove:473830228968341505>")
                         .setImage(url)
                         .setColor("#6ce0c7")
-                        .setFooter('Merci pour ce chat ' + message.author.displayName);
+                        .setFooter('Merci pour ce chat ' + author);
                         return message.channel.send(embed);
                     })
         }
