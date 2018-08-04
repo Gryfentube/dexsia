@@ -82,7 +82,7 @@ bot.on('message', message => {
                                                                icon_url: "https://cdn.discordapp.com/icons/441664261454823444/1cced0ad87913d0d5232dce11bedb70f.png"}}}))
     };
 	if (message.channel.id === salon.imagedxs) {
-        bot.user.setAvatar("value")
+        bot.user.setAvatar(value)
             .then(bot.channels.get(salon.pologdxs).sendMessage({embed: {color: 0x3ac400, author: {name: "Voici mon image grâce à " + author,
                                                                icon_url: value}}}))
     };
