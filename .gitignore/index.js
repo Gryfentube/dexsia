@@ -9,6 +9,7 @@ var i = 0;
 bot.login(process.env.TOKEN);
 
 const salon = require("./salon.json");
+const user = require("./user.json");
 		//salon 
 			//salons DexSia Introduce YourSelf
 			    const annDXSIY = "452800422655033365"; //salon annonce DexSia Introduce Yourself
@@ -68,19 +69,6 @@ bot.on('message', message => {
 	var author = message.member.displayName;
 	var value = message.content;
 	var messlow = value.toLowerCase();
-	//user
-	const jack = "239310906981482496";
-	const gryf = "187554016853622784";
-	const suky = "289082423960928256";
-	const ragna = "275306941515825163";
-	const ecteur = "337269254208618507";
-	const marie = "426496080272818186";
-	const wena = "313117398171648000";
-	const rock = "266729241549340672";
-	const riva = "223061384320122880";
-	const michi = "408313237134901249";
-	const miyuki = "350022867980910595";
-	const lika = "415547757777125392";
 	//gif
 	const soutienstitch = bot.emojis.find("name", "soutienstitch");
 	const penguin = bot.emojis.find("name", "penguin");
@@ -388,43 +376,43 @@ if (!message.member.user.bot) {
             message.react(bot.emojis.get("455498602375020555"));
         }
 	//user
-		if (message.member.id === suky) {
+		if (message.member.id === user.suky) {
 			message.react('🌮'); 
 		}
-		if (message.member.id === ragna) {
+		if (message.member.id === user.ragna) {
 			message.react('🌮');
 		}
-		if (message.member.id === gryf) {
+		if (message.member.id === user.gryf) {
 			message.react('🍰');
 		}
-		if (message.member.id === marie) {
+		if (message.member.id === user.marie) {
 			message.react('🖖🏾');
 		}
-		if (message.member.id === wena) {
+		if (message.member.id === user.wena) {
 			message.react('😻');
 		}
-		if (message.member.id === rock) {
+		if (message.member.id === user.rock) {
 			message.react('🌭');
 			message.react(bot.emojis.get("465182733740670986")); //pickle rick
 		}
-		if (message.member.id === ecteur) {
+		if (message.member.id === user.ecteur) {
             message.react(bot.emojis.get("465177946349502465")); //so funny
             message.react(bot.emojis.get("465180425225240578")) // blblbl
         }
-        if (message.member.id === jack) { // Jack
+        if (message.member.id === user.jack) { // Jack
             message.react(bot.emojis.get("466031285089992714")); //dizzzy
             message.react(bot.emojis.get("465206990424113152")) //Jack Daniel
         }
-        if (message.member.id === riva) {
+        if (message.member.id === user.riva) {
             message.react(bot.emojis.get("447325154687844352")) //TOP 1
         }
-        if (message.member.id === michi) {
+        if (message.member.id === user.michi) {
             message.react(bot.emojis.get("465182193895997441")) // OOF
         }
-        if (message.member.id === miyuki) {
+        if (message.member.id === user.miyuki) {
             message.react(bot.emojis.get("462211080765177856")) //kuki
         }
-        if (message.member.id === lika) {
+        if (message.member.id === user.lika) {
             message.react(bot.emojis.get("465182733036158978")) //truc mignon là
         }
     //spec
