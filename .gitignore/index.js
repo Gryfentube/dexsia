@@ -376,7 +376,7 @@ if (!message.member.user.bot) {
                         return message.channel.send(embed);
                     })
                 }else{
-                    msg.channel.send("C'est du NSFW !");
+                    message.channel.send("C'est du NSFW !");
                 }
             }
         })
