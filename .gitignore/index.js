@@ -14,9 +14,9 @@ const salon = require("./salon.json");
 			    const annDXSIY = "452800422655033365"; //salon annonce DexSia Introduce Yourself
 			//Portal DexSia Introduce Yourself
 			    const annPoDXSIY = "455740492999688192"; //salon annonce de Portal Dxs IY
-			    const salon.pologdxsIY = "455740278272425995"; //salon console de Portal Dxs IY
+
 			//Portal DexSia
-			    const salon.pologdxs = "455740246110240778"; //salon console de Portal DexSia
+
 
 //variable de départ
 	faker.locale = "fr";
