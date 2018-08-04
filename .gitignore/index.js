@@ -187,6 +187,20 @@ if (!message.member.user.bot) {
             message.channel.sendMessage("OUAIS MOI AUSSI")
 		.then(message.channel.sendMessage(ventistitch + " "))
         }
+	if (messlow.includes("montre moi un chat")) {
+            const subreddits = [
+                        "cats"
+                    ]
+                    const sub = subreddits[Math.round(Math.random() * (subreddits.length - 1))];
+                    randomimages(sub).then(url => {
+                        const embed = new Discord.RichEmbed()
+                        .setDescription("Voici un chat <:051inlove:473830228968341505>")
+                        .setImage(url)
+                        .setColor("#6ce0c7")
+                        .setFooter('Merci pour ce chat ' + message.author.displayName);
+                        return message.channel.send(embed);
+                    })
+        }
 	/*if (messlow.includes("PHRASE EN MINUSCULE")) {
             message.channel.sendMessage("La réponse");
         }*/
