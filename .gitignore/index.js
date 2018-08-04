@@ -357,7 +357,7 @@ if (!message.member.user.bot) {
             }
         }
     }
-	if(messlow.startsWith("montre moi")) {
+	if(messlow.startsWith("montre moi des")) {
     if (args[3] === "chats" || args[3] === "chiens" || args[3] === "trukabouffer" || args[3] === "ramen") {
         if (args[3] === "chats") {var rep = "cats";}
         if (args[3] === "chiens") {var rep = "dogs";}
