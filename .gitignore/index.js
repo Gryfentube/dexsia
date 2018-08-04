@@ -123,7 +123,7 @@ if (!message.member.user.bot) {
         }
     //includes = message qui inclu
     	if (messlow.includes("taco")) {
-            message.channel.sendMessage("🇹🅰️🇨🅾️🇸");
+            message.channel.sendMessage("🇹🅰️🇨🅾️");
         }
         if (messlow.includes("dis moi un poème")) {
             message.channel.sendMessage("Les roses sont rouges, les violettes sont bleues. Vous n'avez rien de mieux à faire ?");
