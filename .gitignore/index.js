@@ -358,11 +358,11 @@ if (!message.member.user.bot) {
         }
     }
 	if(messlow.startsWith("montre moi des")) {
-    if (args[3] === "chats" || args[3] === "chiens" || args[3] === "trukabouffer" || args[3] === "ramen") {
+    if (args[3] === "chats" || args[3] === "chiens" || args[3] === "trukabouffer" || args[3] === "ramens") {
         if (args[3] === "chats") {var rep = "cats";}
         if (args[3] === "chiens") {var rep = "dogs";}
         if (args[3] === "trukabouffer") {var rep = "food";}
-        if (args[3] === "ramen") {var rep = "ramen";}
+        if (args[3] === "ramens") {var rep = "ramen";}
                     const subreddits = [
                         rep
                     ]
