@@ -360,7 +360,7 @@ if (!message.member.user.bot) {
     }
 	if(messlow.startsWith("montre moi des")) {
     if (reddit[args[3]] != '' && reddit[args[3]] != null) {
-	var rep = reddit.args[3];
+	var rep = reddit[args[3]];
                     const subreddits = [
                         rep
                     ]
