@@ -193,6 +193,9 @@ if (!message.member.user.bot) {
 	/*if (messlow.includes("PHRASE EN MINUSCULE")) {
             message.channel.sendMessage("La réponse");
         }*/
+	if (messlow.includes("blague de programmeur")) {
+            message.channel.sendMessage("Quel est le type de musique préférée des programeurs ?").setTimeout(function(){ message.channel.sendMessage("Un algo-rythm 💻🎵"); }, 7000);
+        }
     //multiple includes &&
     	if ((messlow.includes("jack")) && (messlow.includes("fou"))) {
             message.channel.sendMessage("Nan mais monsieur Joker est fou, c'est un fait 🃏 <:051mask:473830229190770688>");
