@@ -13,6 +13,7 @@ bot.login(process.env.TOKEN);
 
 const salon = require("./salon.json");
 const user = require("./user.json");
+const reddit = require("./reddit.json");
 		//salon 
 			//salons DexSia Introduce YourSelf
 			    const annDXSIY = "452800422655033365"; //salon annonce DexSia Introduce Yourself
@@ -358,11 +359,8 @@ if (!message.member.user.bot) {
         }
     }
 	if(messlow.startsWith("montre moi des")) {
-    if (args[3] === "chats" || args[3] === "chiens" || args[3] === "trukabouffer" || args[3] === "ramens") {
-        if (args[3] === "chats") {var rep = "cats";}
-        if (args[3] === "chiens") {var rep = "dogs";}
-        if (args[3] === "trukabouffer") {var rep = "food";}
-        if (args[3] === "ramens") {var rep = "ramen";}
+    if (reddit.includes(args[3])) {
+	var rep = reddit.args[3];
                     const subreddits = [
                         rep
                     ]
