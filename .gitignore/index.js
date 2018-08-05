@@ -369,7 +369,7 @@ if (!message.member.user.bot) {
                         const embed = new Discord.RichEmbed()
                         .setDescription("Voici des " + args[3])
                         .setImage(url)
-                        .setColor("#6ce0c7")
+                        .setColor(faker.internet.color())
                         .setFooter('Merci ' + author);
                         return message.channel.send(embed);
                     })
