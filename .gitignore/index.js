@@ -194,7 +194,7 @@ if (!message.member.user.bot) {
             message.channel.sendMessage("La réponse");
         }*/
 	if (messlow.includes("blague de programmeur")) {
-            message.channel.sendMessage("Quel est le type de musique préférée des programeurs ?").setTimeout(function(){ message.channel.sendMessage("Un algo-rythm 💻🎵"); }, 7000);
+            message.channel.sendMessage("Quel est le type de musique préférée des programeurs ?").then(message.channel.sendMessage("Un algo-rythm 💻🎵"));
         }
     //multiple includes &&
     	if ((messlow.includes("jack")) && (messlow.includes("fou"))) {
