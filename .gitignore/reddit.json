@@ -1,13 +1,11 @@
 {
-  "chats": "cats",
-  "gatos": "cats",
+  "chat": "cats",
   "gato": "cats",
-  "chiens": "dogs",
-  "perros": "dogs",
+  "chien": "dogs",
   "perro": "dogs",
-  "trukabouffer": "food",
+  "repas": "food",
   "peepo": "pepe",
-  "imajolies": "itookapicture",
   "imajolie": "itookapicture",
-  "ramens": "ramen"
+  "ramen": "ramen",
+  "doodle": "reallifedoodles"
 }
