@@ -370,7 +370,7 @@ if (!message.member.user.bot) {
                     const sub = subreddits[Math.round(Math.random() * (subreddits.length - 1))];
                     randomimages(sub).then(url => {
                         const embed = new Discord.RichEmbed()
-                        .setDescription("Voici des " + args[3])
+                        .setDescription("Voici " + args[2] + " " + args[3])
                         .setImage(url)
                         .setColor(faker.internet.color())
                         .setFooter('Merci ' + author);
