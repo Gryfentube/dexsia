@@ -55,9 +55,8 @@ const reddit = require("./reddit.json");
         if (minute < 10) {minute = "0" + minute}
         var date = heure + ":" + minute;
 	    const embed = new Discord.RichEmbed()
-                .setDescription("**Démarrage réussi :D**")
-                .setColor("#62F8C8")
-		.setFooter(date);
+                .setDescription("Démarrage réussi à **" + date + "** :D")
+                .setColor("#62F8C8");
 	    bot.user.setPresence({ game: { name: activ}});
 	    console.log("Le bot est prêt");
 	    bot.channels.get(salon.pologdxs).send(embed)
