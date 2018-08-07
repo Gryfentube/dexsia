@@ -71,7 +71,7 @@ bot.on("guildMemberRemove", member => { //Quand un membre quitte dans le serveur
     var aurevoirDXS = member.guild.channels.find("name", "aurevoir"); //variable pour le salon aurevoir
 	const embed = new Discord.RichEmbed()
             .setDescription("**" + member.displayName + "** a quitté la DexSia")
-            .setColor("#6292f8");
+            .setColor("#f86292");
     aurevoirDXS.sendMessage('**' + member.displayName + '** est partie. Rest in pepperoni... <:051cry:473830225801641987>') //envoie le message de aurevoir
     bot.channels.get(salon.pologdxs).sendMessage(embed)  //console
 })
