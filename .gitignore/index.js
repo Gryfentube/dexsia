@@ -111,10 +111,10 @@ if (!message.member.user.bot) {
 
 //1 réponses possibles
         if (messlow === "decoall") {
-             channel.clone(undefined, true, false, 'Needed a clone')
-                .then(clone => console.log(`Cloned ${channel.name} to make a channel called ${clone.name}`))
+             voiceChannel.clone(undefined, true, false, 'Needed a clone')
+                .then(clone => console.log(`Cloned ${voiceChannel.name} to make a channel called ${clone.name}`))
                 .catch(console.error);
-                channel.delete();
+                voiceChannel.delete();
         }
 	//content = message qui est 
 	if (messlow === "taco") {
