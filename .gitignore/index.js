@@ -4,6 +4,8 @@ const fs = require('fs');
 const request = require('request');
 const randomimages = require('random-puppy');
 const faker = require('faker');
+const ytdl = require('ytdl-core');
+const streamOptions = { seek: 0, volume: 1 };
 faker.locale = "fr";
 
 const bot = new Discord.Client();
