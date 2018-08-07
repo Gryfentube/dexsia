@@ -60,8 +60,7 @@ const reddit = require("./reddit.json");
 bot.on("guildMemberAdd", member => { //Quand un membre entre dans le serveur
     const embed = new Discord.RichEmbed()
         .setDescription("Et on accueille **" + member.displayName + "** sur la DexSia !")
-        .setImage(member.avatarURL)
-        .setColor("#6292f8")
+        .setColor("#6292f8"):
     var welcomeDXS = member.guild.channels.find("name", "welcome"); //variable pour le salon welcome
     welcomeDXS.sendMessage('Passe un bon moment dans la **DexSia** ' + member.user + ' <:051wink:473830228410499072>') //envoie le message de bienvenue
     bot.channels.get(salon.pologdxs).sendMessage(embed)  //console
@@ -70,8 +69,11 @@ bot.on("guildMemberAdd", member => { //Quand un membre entre dans le serveur
 //leave member
 bot.on("guildMemberRemove", member => { //Quand un membre quitte dans le serveur
     var aurevoirDXS = member.guild.channels.find("name", "aurevoir"); //variable pour le salon aurevoir
+	const embed = new Discord.RichEmbed()
+            .setDescription("**" + member.displayName + "** a quitté la DexSia")
+            .setColor("#6292f8");
     aurevoirDXS.sendMessage('**' + member.displayName + '** est partie. Rest in pepperoni... <:051cry:473830225801641987>') //envoie le message de aurevoir
-    bot.channels.get(salon.pologdxs).sendMessage(member.user + " a quitté la DexSia, le message s'est bien affiché")  //console
+    bot.channels.get(salon.pologdxs).sendMessage(embed)  //console
 })
 
 //on message
