@@ -22,10 +22,6 @@ const reddit = require("./reddit.json");
 			    const annDXSIY = "452800422655033365"; //salon annonce DexSia Introduce Yourself
 			//Portal DexSia Introduce Yourself
 			    const annPoDXSIY = "455740492999688192"; //salon annonce de Portal Dxs IY
-
-			//Portal DexSia
-
-
 //variable de départ
 	
 	faker.locale = "fr";
@@ -50,9 +46,18 @@ const reddit = require("./reddit.json");
 
 //event on démarrage
 	bot.on('ready', () => {
+        var ladate = new Date();
+        var minute = ladate.getMinutes();
+        var heure = ladate.getHours() + 2;
+        if (heure === 24) {var heure = 0}
+        if (heure === 25) {var heure = 1}
+        if (heure < 10) {heure = "0" + heure}
+        if (minute < 10) {minute = "0" + minute}
+        var date = heure + ":" + minute;
 	    const embed = new Discord.RichEmbed()
                 .setDescription("**Démarrage réussi :D**")
-                .setColor("#62F8C8");
+                .setColor("#62F8C8")
+		.setFooter(date);
 	    bot.user.setPresence({ game: { name: activ}});
 	    console.log("Le bot est prêt");
 	    bot.channels.get(salon.pologdxs).send(embed)
