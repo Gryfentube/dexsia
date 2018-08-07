@@ -58,9 +58,13 @@ const reddit = require("./reddit.json");
 
 //join member
 bot.on("guildMemberAdd", member => { //Quand un membre entre dans le serveur
+    const embed = new Discord.RichEmbed()
+        .setDescription("Et on accueille **" + member.displayName + "** sur la DexSia !")
+        .setImage(member.avatarURL)
+        .setColor("#6292f8")
     var welcomeDXS = member.guild.channels.find("name", "welcome"); //variable pour le salon welcome
     welcomeDXS.sendMessage('Passe un bon moment dans la **DexSia** ' + member.user + ' <:051wink:473830228410499072>') //envoie le message de bienvenue
-    bot.channels.get(salon.pologdxs).sendMessage(member.user + " est arrivé dans la DexSia, le message s'est bien affiché")  //console
+    bot.channels.get(salon.pologdxs).sendMessage(embed)  //console
 });
 
 //leave member
