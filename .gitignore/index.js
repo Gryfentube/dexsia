@@ -110,12 +110,6 @@ if (!message.member.user.bot) {
 	if ((message.channel.id === "454997194207133716") || (message.channel.id === "464405389958709248")) {
 
 //1 réponses possibles
-        if (messlow === "decoall") {
-             voiceChannel.clone(undefined, true, false, 'Needed a clone')
-                .then(clone => console.log(`Cloned ${voiceChannel.name} to make a channel called ${clone.name}`))
-                .catch(console.error);
-                voiceChannel.delete();
-        }
 	//content = message qui est 
 	if (messlow === "taco") {
             message.channel.sendMessage("<:TACO11:449684235838554114><:TACO12:449684236119572483><:TACO13:449684236266504192><:TACO14:449684236333744128>\n<:TACO21:449684236715294730><:TACO22:449684236723814411><:TACO23:449684237721796608><:TACO24:449684236899713025>\n<:TACO31:449684237508018176><:TACO32:449684237650493450><:TACO33:449684237726253056><:TACO34:449684237940031488>");
