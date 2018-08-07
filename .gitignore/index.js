@@ -73,9 +73,6 @@ bot.on("guildMemberRemove", member => { //Quand un membre quitte dans le serveur
 //on message
 bot.on('message', message => {
 //var
-	const playlist = message.guild.playlist;
-	await playlist.add(message.content);
-	return playlist.start(message.member.voiceChannel);
 	//message
 	var author = message.member.displayName;
 	var value = message.content;
@@ -113,10 +110,6 @@ if (!message.member.user.bot) {
 	if ((message.channel.id === "454997194207133716") || (message.channel.id === "464405389958709248")) {
 
 //1 réponses possibles
-	//MUSIC
-	if (args[0] === "dxs.play") {
-	    start(voiceChannel)
-	}
         if (messlow === "decoall") {
              channel.clone(undefined, true, false, 'Needed a clone')
                 .then(clone => console.log(`Cloned ${channel.name} to make a channel called ${clone.name}`))
