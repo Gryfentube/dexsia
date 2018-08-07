@@ -7,6 +7,7 @@ const faker = require('faker');
 const ytdl = require('ytdl-core');
 const streamOptions = { seek: 0, volume: 1 };
 faker.locale = "fr";
+require('discord.js-music');
 
 const bot = new Discord.Client();
 var i = 0;
@@ -26,6 +27,7 @@ const reddit = require("./reddit.json");
 
 
 //variable de départ
+	
 	faker.locale = "fr";
 	var prefix = ("_"); //définir le prefix du bot
 	var activ = ("éradiquer un penguin"); //modifier la valeur entre guillemets pour changer son état au démarage
@@ -71,6 +73,9 @@ bot.on("guildMemberRemove", member => { //Quand un membre quitte dans le serveur
 //on message
 bot.on('message', message => {
 //var
+	const playlist = message.guild.playlist;
+	await playlist.add(message.content);
+	return playlist.start(message.member.voiceChannel);
 	//message
 	var author = message.member.displayName;
 	var value = message.content;
@@ -108,8 +113,18 @@ if (!message.member.user.bot) {
 	if ((message.channel.id === "454997194207133716") || (message.channel.id === "464405389958709248")) {
 
 //1 réponses possibles
+	//MUSIC
+	if (args[0] === "dxs.play") {
+	    start(voiceChannel)
+	}
+        if (messlow === "decoall") {
+             channel.clone(undefined, true, false, 'Needed a clone')
+                .then(clone => console.log(`Cloned ${channel.name} to make a channel called ${clone.name}`))
+                .catch(console.error);
+                channel.delete();
+        }
 	//content = message qui est 
-		if (messlow === "taco") {
+	if (messlow === "taco") {
             message.channel.sendMessage("<:TACO11:449684235838554114><:TACO12:449684236119572483><:TACO13:449684236266504192><:TACO14:449684236333744128>\n<:TACO21:449684236715294730><:TACO22:449684236723814411><:TACO23:449684237721796608><:TACO24:449684236899713025>\n<:TACO31:449684237508018176><:TACO32:449684237650493450><:TACO33:449684237726253056><:TACO34:449684237940031488>");
         }
         if (messlow === "montre moi des glaçages de cupcake") {
