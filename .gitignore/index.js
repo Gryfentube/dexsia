@@ -53,10 +53,11 @@ const reddit = require("./reddit.json");
         if (heure === 25) {var heure = 1}
         if (heure < 10) {heure = "0" + heure}
         if (minute < 10) {minute = "0" + minute}
-        var date = heure + ":" + minute;
+        var horaire = heure + ":" + minute;
 	    const embed = new Discord.RichEmbed()
-                .setDescription("Démarrage réussi à **" + date + "** :D")
-                .setColor("#62F8C8");
+                .setDescription("Démarrage réussi :D")
+                .setColor("#62F8C8")
+	    	.setFooter(horaire);
 	    bot.user.setPresence({ game: { name: activ}});
 	    console.log("Le bot est prêt");
 	    bot.channels.get(salon.pologdxs).send(embed)
@@ -66,7 +67,8 @@ const reddit = require("./reddit.json");
 bot.on("guildMemberAdd", member => { //Quand un membre entre dans le serveur
     const embed = new Discord.RichEmbed()
         .setDescription("Et on accueille **" + member.displayName + "** sur la DexSia !")
-        .setColor("#6292f8");
+        .setColor("#6292f8")
+    	.setFooter(horaire);
     var welcomeDXS = member.guild.channels.find("name", "welcome"); //variable pour le salon welcome
     welcomeDXS.sendMessage('Passe un bon moment dans la **DexSia** ' + member.user + ' <:051wink:473830228410499072>') //envoie le message de bienvenue
     bot.channels.get(salon.pologdxs).sendMessage(embed)  //console
@@ -75,9 +77,18 @@ bot.on("guildMemberAdd", member => { //Quand un membre entre dans le serveur
 //leave member
 bot.on("guildMemberRemove", member => { //Quand un membre quitte dans le serveur
     var aurevoirDXS = member.guild.channels.find("name", "aurevoir"); //variable pour le salon aurevoir
+	var ladate = new Date();
+        var minute = ladate.getMinutes();
+        var heure = ladate.getHours() + 2;
+        if (heure === 24) {var heure = 0}
+        if (heure === 25) {var heure = 1}
+        if (heure < 10) {heure = "0" + heure}
+        if (minute < 10) {minute = "0" + minute}
+        var horaire = heure + ":" + minute;
 	const embed = new Discord.RichEmbed()
             .setDescription("**" + member.displayName + "** a quitté la DexSia")
-            .setColor("#f86292");
+            .setColor("#f86292")
+	    .setFooter(horaire);
     aurevoirDXS.sendMessage('**' + member.displayName + '** est partie. Rest in pepperoni... <:051cry:473830225801641987>') //envoie le message de aurevoir
     bot.channels.get(salon.pologdxs).sendMessage(embed)  //console
 })
@@ -85,6 +96,14 @@ bot.on("guildMemberRemove", member => { //Quand un membre quitte dans le serveur
 //on message
 bot.on('message', message => {
 //var
+	var ladate = new Date();
+        var minute = ladate.getMinutes();
+        var heure = ladate.getHours() + 2;
+        if (heure === 24) {var heure = 0}
+        if (heure === 25) {var heure = 1}
+        if (heure < 10) {heure = "0" + heure}
+        if (minute < 10) {minute = "0" + minute}
+        var horaire = heure + ":" + minute;
 	//message
 	var author = message.member.displayName;
 	var value = message.content;
@@ -116,7 +135,8 @@ bot.on('message', message => {
     if (message.channel.id === "464399516586475520"){
 	    const embed = new Discord.RichEmbed()
             .setDescription(value)
-            .setColor("#F8C862");
+            .setColor("#F8C862")
+	    .setFooter(horaire);
             bot.channels.get("464399561985753089").sendMessage(value) //annonce
                 .then(bot.channels.get(salon.pologdxs).sendMessage(embed))
     };
