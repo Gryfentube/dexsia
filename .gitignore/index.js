@@ -65,6 +65,14 @@ const reddit = require("./reddit.json");
 
 //join member
 bot.on("guildMemberAdd", member => { //Quand un membre entre dans le serveur
+	var ladate = new Date();
+        var minute = ladate.getMinutes();
+        var heure = ladate.getHours() + 2;
+        if (heure === 24) {var heure = 0}
+        if (heure === 25) {var heure = 1}
+        if (heure < 10) {heure = "0" + heure}
+        if (minute < 10) {minute = "0" + minute}
+        var horaire = heure + ":" + minute;
     const embed = new Discord.RichEmbed()
         .setDescription("Et on accueille **" + member.displayName + "** sur la DexSia !")
         .setColor("#6292f8")
