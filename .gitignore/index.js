@@ -114,8 +114,11 @@ bot.on('message', message => {
                                                                fields: [{name: "L'annonce est :", value: value}]}}))
     }; //console
     if (message.channel.id === "464399516586475520"){
+	    const embed = new Discord.RichEmbed()
+            .setDescription(value)
+            .setColor("#F8C862");
             bot.channels.get("464399561985753089").sendMessage(value) //annonce
-                .then(bot.channels.get(salon.pologdxs).sendMessage("LEVEL UP DANS DEXSIA " + value))
+                .then(bot.channels.get(salon.pologdxs).sendMessage(embed))
     };
 
 if (!message.member.user.bot) {
