@@ -16,7 +16,7 @@ bot.login(process.env.TOKEN);
 
 const salon = require("./salon.json");
 const user = require("./user.json");
-const reddit = require("...../speedybird/blob/master/.gitignore/reddit.json");
+const reddit = require(".../speedybird/..gitignore/reddit.json");
 		//salon 
 			//salons DexSia Introduce YourSelf
 			    const annDXSIY = "452800422655033365"; //salon annonce DexSia Introduce Yourself
