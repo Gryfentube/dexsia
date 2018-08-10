@@ -419,7 +419,7 @@ if (!message.member.user.bot) {
                         const embed = new Discord.RichEmbed()
                         .setDescription("Voici " + args[2] + " " + args[3])
                         .setImage(url)
-                        .setColor(faker.internet.color())
+                        .setColor("#8862e3")
                         .setFooter('Merci ' + author);
                         return message.channel.send(embed);
                     })
